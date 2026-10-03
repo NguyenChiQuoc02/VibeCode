@@ -1,0 +1,18 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: auth-service
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/vibecode_auth
+app:
+  jwt:
+    secret:
+    expiration-ms: 86400000
+  cors:
+    allowed-origin: http://localhost:3000,http://localhost:3001
+  admin:
+    email: admin@vibecode.com
+    password:
+    full-name: Administrator
