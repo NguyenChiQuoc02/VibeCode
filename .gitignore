@@ -3,3 +3,6 @@ node_modules
 target
 .env.local
 BE/auth-service/src/main/resources/application.yml
+.playwright-mcp
+application-local.yml
+script/

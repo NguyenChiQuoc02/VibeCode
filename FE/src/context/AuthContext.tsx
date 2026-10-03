@@ -1,11 +1,11 @@
 "use client";
 
-import { createContext, useCallback, useContext, useEffect, useState, ReactNode } from "react";
-import { authApi, AuthResponse, User } from "@/lib/api";
+import { createContext, useContext, useEffect, useState, ReactNode } from "react";
+import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
+import { authApi, AuthResponse, TOKEN_KEY, User } from "@/lib/api";
 
 interface AuthState {
   user: User | null;
-  token: string | null;
   loading: boolean;
   login: (email: string, password: string) => Promise<User>;
   register: (fullName: string, email: string, password: string) => Promise<User>;
@@ -13,49 +13,68 @@ interface AuthState {
 }
 
 const AuthContext = createContext<AuthState | null>(null);
-const TOKEN_KEY = "vibecode_token";
 
 export function AuthProvider({ children }: { children: ReactNode }) {
-  const [user, setUser] = useState<User | null>(null);
-  const [token, setToken] = useState<string | null>(null);
-  const [loading, setLoading] = useState(true);
+  const queryClient = useQueryClient();
+  // undefined = chưa đọc localStorage, null = chưa đăng nhập
+  const [token, setToken] = useState<string | null | undefined>(undefined);
 
   useEffect(() => {
-    const saved = localStorage.getItem(TOKEN_KEY);
-    if (!saved) {
-      setLoading(false);
-      return;
-    }
-    authApi
-      .me(saved)
-      .then((u) => {
-        setToken(saved);
-        setUser(u);
-      })
-      .catch(() => localStorage.removeItem(TOKEN_KEY))
-      .finally(() => setLoading(false));
+    setToken(localStorage.getItem(TOKEN_KEY));
   }, []);
 
-  const apply = (res: AuthResponse) => {
+  const meQuery = useQuery({
+    queryKey: ["me", token],
+    queryFn: authApi.me,
+    enabled: !!token,
+    retry: false,
+  });
+
+  // Token hết hạn hoặc không hợp lệ -> đăng xuất.
+  useEffect(() => {
+    if (meQuery.isError) {
+      localStorage.removeItem(TOKEN_KEY);
+      setToken(null);
+    }
+  }, [meQuery.isError]);
+
+  const onAuthed = (res: AuthResponse) => {
     localStorage.setItem(TOKEN_KEY, res.token);
+    queryClient.setQueryData(["me", res.token], res.user);
     setToken(res.token);
-    setUser(res.user);
     return res.user;
   };
 
-  const login = useCallback(async (email: string, password: string) => apply(await authApi.login(email, password)), []);
-  const register = useCallback(
-    async (fullName: string, email: string, password: string) => apply(await authApi.register(fullName, email, password)),
-    []
-  );
-  const logout = useCallback(() => {
+  const loginMutation = useMutation({
+    mutationFn: ({ email, password }: { email: string; password: string }) => authApi.login(email, password),
+    onSuccess: onAuthed,
+  });
+  const registerMutation = useMutation({
+    mutationFn: (v: { fullName: string; email: string; password: string }) => authApi.register(v.fullName, v.email, v.password),
+    onSuccess: onAuthed,
+  });
+
+  const logout = () => {
     localStorage.removeItem(TOKEN_KEY);
     setToken(null);
-    setUser(null);
-  }, []);
+    queryClient.clear();
+  };
+
+  const loading = token === undefined || (!!token && meQuery.isPending);
 
   return (
-    <AuthContext.Provider value={{ user, token, loading, login, register, logout }}>{children}</AuthContext.Provider>
+    <AuthContext.Provider
+      value={{
+        user: token ? (meQuery.data ?? null) : null,
+        loading,
+        login: async (email, password) => (await loginMutation.mutateAsync({ email, password })).user,
+        register: async (fullName, email, password) =>
+          (await registerMutation.mutateAsync({ fullName, email, password })).user,
+        logout,
+      }}
+    >
+      {children}
+    </AuthContext.Provider>
   );
 }
 

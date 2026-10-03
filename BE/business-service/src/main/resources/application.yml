@@ -6,3 +6,6 @@ spring:
   data:
     mongodb:
       uri: mongodb://localhost:27017/vibecode_business
+app:
+  cors:
+    allowed-origin: http://localhost:3000,http://localhost:3001

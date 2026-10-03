@@ -1,0 +1,4 @@
+# Sao chép thành application-local.yml (đã được gitignore) rồi điền thông tin Cloudinary.
+app:
+  cloudinary:
+    url:

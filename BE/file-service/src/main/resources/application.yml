@@ -6,3 +6,17 @@ spring:
   data:
     mongodb:
       uri: mongodb://localhost:27017/vibecode_file
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 101MB
+  # File cấu hình riêng của máy (không commit), xem application-local.yml.example.
+  config:
+    import: optional:file:./application-local.yml
+app:
+  cloudinary:
+    # Dạng cloudinary://API_KEY:API_SECRET@CLOUD_NAME. Chỉ đặt qua biến môi trường CLOUDINARY_URL hoặc application-local.yml.
+    url: ${CLOUDINARY_URL:}
+    folder: vibecode
+  cors:
+    allowed-origin: http://localhost:3000,http://localhost:3001
