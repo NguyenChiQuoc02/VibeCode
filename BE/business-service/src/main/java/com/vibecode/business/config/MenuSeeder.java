@@ -37,7 +37,8 @@ public class MenuSeeder implements ApplicationRunner {
                 item("Di tích, thắng cảnh", "/dashboard/landmarks", "landmark", 3, false, travel.id()),
                 item("Địa điểm du lịch", "/dashboard/destinations", "travel", 4, false, travel.id()),
                 item("Tour", "/dashboard/tours", "tour", 5, true, travel.id()),
-                item("Đăng ký tour", "/dashboard/bookings", "booking", 6, true, travel.id())));
+                item("Đăng ký tour", "/dashboard/bookings", "booking", 6, true, travel.id()),
+                item("Gợi ý tour", "/dashboard/recommend", "recommend", 7, true, travel.id())));
 
         MenuConfig cars = repo.save(item("Quản lý xe hơi", "", "car", 7, false, null));
         repo.saveAll(List.of(

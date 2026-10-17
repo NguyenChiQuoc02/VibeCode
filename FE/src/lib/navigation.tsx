@@ -14,6 +14,7 @@ import TourIcon from "@mui/icons-material/Tour";
 import ConfirmationNumberIcon from "@mui/icons-material/ConfirmationNumber";
 import DirectionsCarIcon from "@mui/icons-material/DirectionsCar";
 import SellIcon from "@mui/icons-material/Sell";
+import AutoAwesomeIcon from "@mui/icons-material/AutoAwesome";
 
 export interface NavItem {
   /** Tên hiển thị trên menu. */
@@ -48,6 +49,7 @@ export const ICONS: Record<string, ReactNode> = {
   booking: <ConfirmationNumberIcon />,
   car: <DirectionsCarIcon />,
   brand: <SellIcon />,
+  recommend: <AutoAwesomeIcon />,
 };
 export const ICON_OPTIONS = Object.keys(ICONS).map((k) => ({ value: k, label: k }));
 
@@ -64,6 +66,7 @@ export const NAV: NavItem[] = [
   { label: "Màn hình chính", title: "Màn hình chính", subtitle: "Các nhóm dữ liệu chính của hệ thống", icon: <HubIcon />, href: "/main-dashboard" },
   { label: "Tour", title: "Quản lý tour", subtitle: "Tạo tour và liên kết với địa điểm du lịch, di tích", icon: <TourIcon />, href: "/dashboard/tours", adminOnly: true },
   { label: "Đăng ký tour", title: "Đăng ký tour", subtitle: "Danh sách đăng ký, xác nhận hoàn thành và thu tiền mặt", icon: <ConfirmationNumberIcon />, href: "/dashboard/bookings", adminOnly: true },
+  { label: "Gợi ý tour", title: "Hệ thống gợi ý", subtitle: "Trạng thái mô hình, làm mới thủ công và hiệu quả gợi ý", icon: <AutoAwesomeIcon />, href: "/dashboard/recommend", adminOnly: true },
   { label: "Hãng xe", title: "Hãng xe", subtitle: "Quản lý danh sách hãng xe hơi", icon: <SellIcon />, href: "/dashboard/car-brands", adminOnly: true },
   { label: "Mẫu xe", title: "Mẫu xe hơi", subtitle: "Quản lý danh sách mẫu xe của các hãng", icon: <DirectionsCarIcon />, href: "/dashboard/cars", adminOnly: true },
   { label: "Lịch lái thử", title: "Lịch lái thử", subtitle: "Xác nhận và theo dõi lịch hẹn lái thử của khách", icon: <ConfirmationNumberIcon />, href: "/dashboard/test-drives", adminOnly: true },

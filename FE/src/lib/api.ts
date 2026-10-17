@@ -508,7 +508,29 @@ export interface RecommendEvent {
   sessionId?: string;
 }
 
+export interface RecommendStatus {
+  ready: boolean;
+  /** Thời điểm dựng mô hình gần nhất (giây epoch). */
+  builtAt?: number | null;
+  tours: number;
+  places: number;
+  usersWithHistory: number;
+  eventsEnabled: boolean;
+}
+
+export interface RecommendMetrics {
+  days: number;
+  byType: Record<string, number>;
+  recommendSources: { source: string; views: number; clicks: number; clickRate: number }[];
+}
+
 export const recommendApi = {
+  /** Trạng thái mô hình gợi ý (công khai). */
+  status: () => recommendHttp.get<RecommendStatus>("/api/recommend/status").then((r) => r.data),
+  /** Admin: dựng lại mô hình ngay từ dữ liệu mới nhất. */
+  refresh: () => recommendHttp.post<RecommendStatus>("/api/recommend/refresh").then((r) => r.data),
+  /** Admin: số sự kiện và tỷ lệ bấm theo khối gợi ý. */
+  metrics: (days = 30) => recommendHttp.get<RecommendMetrics>("/api/recommend/metrics", { params: { days } }).then((r) => r.data),
   popular: (limit = 6) => recommendHttp.get<RecommendedTour[]>("/api/recommend/tours/popular", { params: { limit } }).then((r) => r.data),
   similar: (tourId: string, limit = 4) => recommendHttp.get<RecommendedTour[]>(`/api/recommend/tours/${tourId}/similar`, { params: { limit } }).then((r) => r.data),
   /** Cần đăng nhập. */

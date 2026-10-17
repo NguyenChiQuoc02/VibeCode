@@ -2,6 +2,7 @@ import asyncio
 import logging
 import time
 from contextlib import asynccontextmanager
+from datetime import datetime, timedelta
 
 from fastapi import Depends, FastAPI, HTTPException, Query, Request
 from fastapi.middleware.cors import CORSMiddleware
@@ -45,13 +46,25 @@ async def rebuild() -> None:
         log.info("Đã dựng mô hình: %d tour, %d địa điểm, %d người dùng có lịch sử", len(tours), len(places.places), len(state["model"].history))
 
 
+def seconds_until_next_refresh(now: datetime, hour: int) -> float:
+    """Số giây từ `now` đến lần dựng kế tiếp lúc `hour` giờ (giờ máy chủ); đúng giờ thì tính sang ngày mai."""
+    target = now.replace(hour=hour, minute=0, second=0, microsecond=0)
+    if target <= now:
+        target += timedelta(days=1)
+    return (target - now).total_seconds()
+
+
 async def _refresh_loop() -> None:
+    """Dựng ngay khi khởi động (để có mô hình dùng), sau đó mỗi ngày một lần vào giờ `refresh_hour`."""
     while True:
         try:
             await rebuild()
+            delay = seconds_until_next_refresh(datetime.now(), settings.refresh_hour)
+            log.info("Lần dựng kế tiếp sau %.0f giây (lúc %02d:00)", delay, settings.refresh_hour)
         except (DataSourceError, KeyError, ValueError) as e:
-            log.warning("Chưa dựng được mô hình gợi ý: %s", e)
-        await asyncio.sleep(settings.refresh_seconds)
+            delay = settings.retry_seconds
+            log.warning("Chưa dựng được mô hình gợi ý, thử lại sau %d giây: %s", delay, e)
+        await asyncio.sleep(delay)
 
 
 @asynccontextmanager

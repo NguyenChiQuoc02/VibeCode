@@ -19,8 +19,10 @@ class Settings(BaseSettings):
     mongo_uri: str = "mongodb://localhost:27017/?directConnection=true"
     mongo_db: str = "vibecode_recommend"
     cors_origins: str = "http://localhost:3000,http://localhost:3001"
-    # Chu kỳ dựng lại mô hình từ dữ liệu mới (giây).
-    refresh_seconds: int = 300
+    # Giờ trong ngày (0-23, giờ máy chủ) dựng lại mô hình từ dữ liệu mới. Mặc định 0 giờ mỗi ngày.
+    refresh_hour: int = 0
+    # Dựng lỗi (chưa lấy được dữ liệu) thì thử lại sau ngần này giây.
+    retry_seconds: int = 300
     # Tỷ trọng của lọc cộng tác so với độ giống theo nội dung khi đã có dữ liệu đăng ký.
     cf_weight: float = 0.6
 
