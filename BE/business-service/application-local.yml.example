@@ -1,0 +1,8 @@
+# Sao chép thành application-local.yml (đã được gitignore) rồi điền tài khoản Superset (nên dùng tài khoản chỉ đọc).
+app:
+  superset:
+    username:
+    password:
+  # Phải trùng với app.jwt.secret của auth-service.
+  jwt:
+    secret:

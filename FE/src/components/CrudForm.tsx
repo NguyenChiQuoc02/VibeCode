@@ -9,6 +9,7 @@ import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import SaveIcon from "@mui/icons-material/SaveOutlined";
 import PageTitle from "@/components/PageTitle";
 import { CrudApi, FieldDef } from "@/components/CrudPage";
+import { useToast } from "@/context/ToastContext";
 
 type Form = Record<string, string | number | boolean>;
 
@@ -37,6 +38,7 @@ function toForm<T>(fields: FieldDef<T>[], src: Record<string, unknown>): Form {
 function CrudFormInner<T extends { id: string }>({ basePath, noun, queryKey, api, fields, blank, id }: Omit<Props<T>, "ready">) {
   const router = useRouter();
   const qc = useQueryClient();
+  const toast = useToast();
   const editing = Boolean(id);
 
   const existing = useQuery({ queryKey: [queryKey, "detail", id], queryFn: () => api.get(id!), enabled: editing });
@@ -57,6 +59,7 @@ function CrudFormInner<T extends { id: string }>({ basePath, noun, queryKey, api
     mutationFn: (body: Omit<T, "id">) => (id ? api.update(id, body) : api.create(body)),
     onSuccess: (saved) => {
       qc.invalidateQueries({ queryKey: [queryKey] });
+      toast.success(editing ? `Cập nhật ${noun} thành công` : `Thêm mới ${noun} thành công`);
       router.push(`${basePath}/${saved.id}`);
     },
     onError: (e: Error) => setError(e.message),
@@ -67,8 +70,13 @@ function CrudFormInner<T extends { id: string }>({ basePath, noun, queryKey, api
     for (const f of fields) {
       const v = form[f.key];
       if (f.kind === "number") {
-        if (v === "" || Number.isNaN(Number(v))) return setError(`${f.label} phải là số`);
-        body[f.key] = Number(v);
+        if (v === "" || v === undefined || v === null) {
+          if (f.required) return setError(`${f.label} không được để trống`);
+          body[f.key] = null;
+        } else {
+          if (Number.isNaN(Number(v))) return setError(`${f.label} phải là số`);
+          body[f.key] = Number(v);
+        }
       } else {
         if (f.required && (v === "" || v === undefined)) return setError(`${f.label} không được để trống`);
         body[f.key] = v;
@@ -143,7 +151,7 @@ function CrudFormInner<T extends { id: string }>({ basePath, noun, queryKey, api
         <Button component={NextLink} href={editing ? `${basePath}/${id}` : basePath} variant="outlined" color="inherit">
           Hủy
         </Button>
-        <Button variant="contained" startIcon={<SaveIcon />} onClick={submit} disabled={save.isPending}>
+        <Button variant="contained" startIcon={<SaveIcon />} onClick={submit} disabled={save.isPending || save.isSuccess}>
           Lưu
         </Button>
       </Stack>

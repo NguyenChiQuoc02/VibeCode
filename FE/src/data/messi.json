@@ -1,0 +1,600 @@
+{
+ "name": "Lionel Andrés Messi",
+ "nickname": "La Pulga",
+ "summary": "Lionel Andrés \"Leo\" Messi là một cầu thủ bóng đá chuyên nghiệp người Argentina hiện đang thi đấu ở vị trí tiền đạo và là đội trưởng của cả câu lạc bộ Inter Miami tại Major League Soccer và đội tuyển bóng đá quốc gia Argentina. Được đánh giá là một trong những cầu thủ vĩ đại nhất mọi thời đại trong lịch sử, Messi đã thiết lập vô số kỷ lục về thành tích cá nhân trong suốt sự nghiệp bóng đá chuyên nghiệp của mình, bao gồm 8 Quả bóng vàng, 6 chiếc giày vàng châu Âu và 8 lần được FIFA vinh danh là cầu thủ xuất sắc nhất thế giới. Anh là cầu thủ sở hữu nhiều danh hiệu tập thể nhất trong lịch sử bóng đá chuyên nghiệp với tổng cộng 45 danh hiệu, bao gồm 12 chức vô địch quốc gia thuộc Big Five, bốn UEFA Champions League, hai Copa América, và một FIFA World Cup. Messi sở hữu hàng loạt kỷ lục bao gồm việc giành nhiều Chiếc giày vàng châu Âu nhất, ghi nhiều bàn thắng nhất cho một câu lạc bộ, ghi nhiều bàn thắng nhất, lập nhiều hat-trick nhất và kiến tạo nhiều nhất tại La Liga. Anh còn giữ kỷ lục về số trận ra sân nhiều nhất, số pha kiến tạo nhiều nhất và đóng góp vào bàn thắng nhiều nhất tại Copa América, cũng như số trận ra sân nhiều nhất và đóng góp vào bàn thắng nhiều nhất tại World Cup. Messi là nam cầu thủ ở khu vực Nam Mỹ có số lần ra sân quốc tế nhiều nhất và ghi nhiều bàn thắng quốc tế nhất, đồng thời anh cũng đứng thứ hai trong danh sách cầu thủ ghi nhiều bàn thắng quốc tế nhất trên toàn thế giới. Là một tay săn bàn cừ khôi và là cầu thủ kiến tạo siêu hạng, Messi đã ghi được hơn 900 bàn thắng trong sự nghiệp thi đấu chuyên nghiệp ở cả cấp câu lạc bộ lẫn đội tuyển quốc gia.",
+ "description": "cầu thủ bóng đá người Argentina (sinh 1987)",
+ "image": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Leo_Messi_Argentina_v_Egypt_7_July_2026-1.jpg?utm_source=vi.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+ "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Leo_Messi_Argentina_v_Egypt_7_July_2026-1.jpg/330px-Leo_Messi_Argentina_v_Egypt_7_July_2026-1.jpg?utm_source=vi.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+ "wikipedia": "https://vi.wikipedia.org/wiki/Lionel_Messi",
+ "birthDate": "1987-06-24",
+ "heightCm": 169,
+ "birthPlace": [
+  "Rosario"
+ ],
+ "citizenship": [
+  "Argentina",
+  "Tây Ban Nha",
+  "Ý"
+ ],
+ "positions": [
+  "tiền đạo",
+  "tiền vệ"
+ ],
+ "clubs": [
+  {
+   "label": "FC Barcelona C",
+   "from": 2003,
+   "to": 2004,
+   "apps": 10,
+   "goals": 5
+  },
+  {
+   "label": "FC Barcelona B",
+   "from": 2004,
+   "to": 2005,
+   "apps": 22,
+   "goals": 6
+  },
+  {
+   "label": "F.C. Barcelona",
+   "from": 2004,
+   "to": 2021,
+   "apps": 520,
+   "goals": 474
+  },
+  {
+   "label": "Đội tuyển bóng đá U-20 quốc gia Argentina",
+   "from": 2004,
+   "to": 2005,
+   "apps": 18,
+   "goals": 14
+  },
+  {
+   "label": "Đội tuyển bóng đá quốc gia Argentina",
+   "from": 2005,
+   "to": 2026,
+   "apps": 207,
+   "goals": 125
+  },
+  {
+   "label": "Đội tuyển bóng đá U-23 quốc gia Argentina",
+   "from": 2008,
+   "to": 2008,
+   "apps": 5,
+   "goals": 2
+  },
+  {
+   "label": "Paris Saint-Germain",
+   "from": 2021,
+   "to": 2023,
+   "apps": 58,
+   "goals": 22
+  },
+  {
+   "label": "Inter Miami",
+   "from": 2023,
+   "to": null,
+   "apps": 72,
+   "goals": 68
+  }
+ ],
+ "awards": [
+  {
+   "label": "UEFA Team of the Year",
+   "years": [
+    2008,
+    2015,
+    2017
+   ]
+  },
+  {
+   "label": "Những giải thưởng cá nhân cấp câu lạc bộ của UEFA",
+   "years": [
+    2009,
+    2015,
+    2020
+   ]
+  },
+  {
+   "label": "IFFHS World's Best Player",
+   "years": [
+    2010,
+    2010,
+    2021
+   ]
+  },
+  {
+   "label": "IFFHS World Team",
+   "years": [
+    2010,
+    2010,
+    2017
+   ]
+  },
+  {
+   "label": "IFFHS World's Best Playmaker",
+   "years": [
+    2010,
+    2015,
+    2021
+   ]
+  },
+  {
+   "label": "FIFA U-20 World Cup awards",
+   "years": [
+    2005,
+    2005
+   ]
+  },
+  {
+   "label": "LFP Awards",
+   "years": [
+    2009,
+    2009
+   ]
+  },
+  {
+   "label": "IFFHS World's Best Top Division Goal Scorer",
+   "years": [
+    2010,
+    2012
+   ]
+  },
+  {
+   "label": "World Cup Golden Ball",
+   "years": [
+    2014
+   ]
+  },
+  {
+   "label": "Quả bóng vàng FIFA",
+   "years": [
+    2010
+   ]
+  },
+  {
+   "label": "Quả bóng vàng Châu Âu",
+   "years": [
+    2009
+   ]
+  },
+  {
+   "label": "Cầu thủ xuất sắc nhất năm của FIFA",
+   "years": [
+    2009
+   ]
+  },
+  {
+   "label": "Chiếc giày vàng châu Âu",
+   "years": [
+    2010
+   ]
+  },
+  {
+   "label": "Onze d'Or",
+   "years": [
+    2009
+   ]
+  },
+  {
+   "label": "Trofeo Alfredo Di Stéfano",
+   "years": [
+    2009
+   ]
+  },
+  {
+   "label": "Footballer of the Year of Argentina",
+   "years": [
+    2005
+   ]
+  },
+  {
+   "label": "Pichichi (danh hiệu)",
+   "years": [
+    2010
+   ]
+  },
+  {
+   "label": "L'Équipe Champion of Champions",
+   "years": [
+    2011
+   ]
+  },
+  {
+   "label": "Best International Athlete ESPY Award",
+   "years": [
+    2012
+   ]
+  },
+  {
+   "label": "Saint George's Cross",
+   "years": [
+    2019
+   ]
+  },
+  {
+   "label": "Giải thưởng Thể thao Thế giới Laureus cho Vận động viên nam của năm",
+   "years": [
+    2020
+   ]
+  },
+  {
+   "label": "Golden Boy Award",
+   "years": [
+    2005
+   ]
+  },
+  {
+   "label": "Giải thưởng Bravo",
+   "years": [
+    2007
+   ]
+  },
+  {
+   "label": "Q6084897",
+   "years": [
+    2006
+   ]
+  },
+  {
+   "label": "Premios Protagonistas",
+   "years": [
+    2008
+   ]
+  },
+  {
+   "label": "Ballon d'Or Dream Team",
+   "years": [
+    2020
+   ]
+  },
+  {
+   "label": "The Best FIFA Men's Player",
+   "years": [
+    2019
+   ]
+  },
+  {
+   "label": "Cầu thủ xuất sắc nhất mùa bóng của UEFA",
+   "years": [
+    2009
+   ]
+  },
+  {
+   "label": "Cầu thủ xuất sắc nhất châu Âu của UEFA",
+   "years": [
+    2011
+   ]
+  },
+  {
+   "label": "La Liga Player of the Month",
+   "years": [
+    2016
+   ]
+  },
+  {
+   "label": "Marca Leyenda",
+   "years": [
+    2009
+   ]
+  },
+  {
+   "label": "Don Balón Award",
+   "years": [
+    2007
+   ]
+  },
+  {
+   "label": "Trofeo EFE",
+   "years": [
+    2007
+   ]
+  },
+  {
+   "label": "FIFA FIFPro World XI",
+   "years": [
+    2007
+   ]
+  },
+  {
+   "label": "Giải thưởng Globe Soccer",
+   "years": [
+    2015
+   ]
+  },
+  {
+   "label": "Giải Konex Kim cương",
+   "years": [
+    2020
+   ]
+  },
+  {
+   "label": "list of UEFA Champions League top scorers",
+   "years": [
+    2009
+   ]
+  },
+  {
+   "label": "Premi Barça Jugadors",
+   "years": [
+    2016
+   ]
+  },
+  {
+   "label": "World Soccer Award",
+   "years": [
+    2009
+   ]
+  },
+  {
+   "label": "Hiệp hội Cầu thủ Chuyên nghiệp Thế giới",
+   "years": [
+    2006
+   ]
+  },
+  {
+   "label": "El País King of European Soccer",
+   "years": [
+    2009
+   ]
+  },
+  {
+   "label": "The Guardian 100 Best Footballers in the World",
+   "years": [
+    2012
+   ]
+  },
+  {
+   "label": "IFFHS World's Best Top Goal Scorer",
+   "years": [
+    2012
+   ]
+  },
+  {
+   "label": "IFFHS World's Best International Goal Scorer",
+   "years": [
+    2011
+   ]
+  },
+  {
+   "label": "Olimpia Award",
+   "years": [
+    2011
+   ]
+  },
+  {
+   "label": "Trofeo Gol Televisión",
+   "years": [
+    2010
+   ]
+  },
+  {
+   "label": "Trofeo Aldo Rovira",
+   "years": [
+    2010
+   ]
+  },
+  {
+   "label": "Mastercard All-Star Team",
+   "years": [
+    2014
+   ]
+  },
+  {
+   "label": "Huân chương Tự do Tổng thống",
+   "years": [
+    2025
+   ]
+  },
+  {
+   "label": "Princess of Asturias Award for Sports",
+   "years": [
+    2026
+   ]
+  }
+ ],
+ "intro": "Lionel Andrés \"Leo\" Messi (phát âm tiếng Tây Ban Nha: [ljoˈnel anˈdɾes ˈmesi] ; sinh ngày 24 tháng 6 năm 1987) là một cầu thủ bóng đá chuyên nghiệp người Argentina hiện đang thi đấu ở vị trí tiền đạo và là đội trưởng của cả câu lạc bộ Inter Miami tại Major League Soccer và đội tuyển bóng đá quốc gia Argentina. Được đánh giá là một trong những cầu thủ vĩ đại nhất mọi thời đại trong lịch sử, Messi đã thiết lập vô số kỷ lục về thành tích cá nhân trong suốt sự nghiệp bóng đá chuyên nghiệp của mình, bao gồm 8 Quả bóng vàng, 6 chiếc giày vàng châu Âu và 8 lần được FIFA vinh danh là cầu thủ xuất sắc nhất thế giới. Anh là cầu thủ sở hữu nhiều danh hiệu tập thể nhất trong lịch sử bóng đá chuyên nghiệp với tổng cộng 45 danh hiệu, bao gồm 12 chức vô địch quốc gia thuộc Big Five, bốn UEFA Champions League, hai Copa América, và một FIFA World Cup. Messi sở hữu hàng loạt kỷ lục bao gồm việc giành nhiều Chiếc giày vàng châu Âu nhất (6 lần), ghi nhiều bàn thắng nhất cho một câu lạc bộ (672 bàn với Barcelona), ghi nhiều bàn thắng nhất (474 bàn), lập nhiều hat-trick nhất (36 lần) và kiến tạo nhiều nhất (192 lần) tại La Liga. Anh còn giữ kỷ lục về số trận ra sân nhiều nhất (39 trận), số pha kiến tạo nhiều nhất (18 lần) và đóng góp vào bàn thắng nhiều nhất (34 lần) tại Copa América, cũng như số trận ra sân nhiều nhất (33 trận) và đóng góp vào bàn thắng nhiều nhất (33 lần) tại World Cup. Messi là nam cầu thủ ở khu vực Nam Mỹ có số lần ra sân quốc tế nhiều nhất (207 lần) và ghi nhiều bàn thắng quốc tế nhất (125 bàn), đồng thời anh cũng đứng thứ hai trong danh sách cầu thủ ghi nhiều bàn thắng quốc tế nhất trên toàn thế giới. Là một tay săn bàn cừ khôi và là cầu thủ kiến tạo siêu hạng, Messi đã ghi được hơn 900 bàn thắng trong sự nghiệp thi đấu chuyên nghiệp ở cả cấp câu lạc bộ lẫn đội tuyển quốc gia.\nSinh ra tại Rosario, Messi chuyển đến Tây Ban Nha và gia nhập Barcelona ở tuổi 13, sau đó anh có lần đầu tiên ra sân trong một trận đấu chính thức vào tháng 10 năm 2004 khi mới 17 tuổi. Kể từ đó, anh dần là cầu thủ chủ chốt của câu lạc bộ trong ba năm tiếp theo. Trong mùa giải đầu tiên không bị gián đoạn bởi chấn thương, anh đã giúp Barcelona đạt được cú ăn ba đầu tiên của lịch sử bóng đá Tây Ban Nha; vào năm đó, ở tuổi 22, Messi đã giành được Quả bóng vàng lần đầu tiên. Ba mùa giải thành công sau đó, với việc Messi giành được bốn Quả bóng vàng liên tiếp, anh trở thành cầu thủ đầu tiên giành được giải thưởng này bốn lần liên tiếp. Trong mùa giải 2011–12, anh lập kỷ lục tại La Liga và châu Âu về số bàn thắng ghi được nhiều nhất trong một mùa giải, đồng thời khẳng định mình là cầu thủ ghi bàn nhiều nhất mọi thời đại của Barcelona. Hai mùa giải tiếp theo, Messi về nhì tại Quả bóng vàng sau Cristiano Ronaldo (đối thủ lớn nhất trong sự nghiệp của anh), trước khi lấy lại phong độ tốt nhất của mình trong mùa giải 2014–15, trở thành cầu thủ ghi bàn nhiều nhất mọi thời đại ở La Liga và cùng Barcelona giành cú ăn ba lịch sử lần thứ hai, sau đó anh giành Quả bóng vàng thứ năm vào năm 2015. Messi đảm nhận tấm băng đội trưởng của Barcelona vào năm 2018 và vào năm 2019, anh đã giành được Quả bóng vàng thứ sáu. Trong suốt quãng thời gian khoác áo Barça, Messi đã giành được 34 danh hiệu, một kỷ lục của câu lạc bộ, bao gồm 10 La Liga, 7 Copa del Rey, 4 UEFA Champions League, 7 Supercopa de España, 3 UEFA Super Cup và 3 FIFA Club World Cup. Tháng 8 năm 2021, anh ký hợp đồng với câu lạc bộ Pháp Paris Saint-Germain, nơi anh giành được chức vô địch Ligue 1 trong cả hai mùa giải của mình tại đây. Messi gia nhập câu lạc bộ Mỹ Inter Miami vào tháng 7 năm 2023 và chỉ trong mùa giải thứ hai, anh đã thiết lập kỷ lục mới về số bàn thắng ghi được cho câu lạc bộ này.\nLà tuyển thủ quốc gia Argentina, Messi là cầu thủ ra sân nhiều nhất và cũng là cầu thủ ghi nhiều bàn thắng nhất mọi thời đại của đất nước quê hương anh. Ở cấp độ trẻ, anh đã giành chức vô địch giải bóng đá trẻ thế giới năm 2005, kết thúc giải đấu với Quả bóng vàng và Chiếc giày vàng, giành tấm huy chương vàng tại Thế vận hội Mùa hè 2008. Phong cách thi đấu của anh, với vóc dáng nhỏ con và khả năng rê bóng bằng chân trái, đã khiến anh luôn được so sánh với đồng hương Diego Maradona, người từng mô tả Messi là truyền nhân của mình. Sau trận ra mắt đội tuyển vào tháng 8 năm 2005, Messi trở thành cầu thủ Argentina trẻ nhất thi đấu và ghi bàn tại FIFA World Cup vào năm 2006 và lọt vào trận chung kết Copa América 2007, nơi anh được vinh danh là cầu thủ trẻ xuất sắc nhất. Với tư cách là đội trưởng của đội tuyển từ tháng 8 năm 2011, anh đã dẫn dắt Argentina đến ba trận chung kết liên tiếp: FIFA World Cup 2014 – nơi anh giành Quả bóng vàng, Copa América 2015 và 2016. Sau khi tuyên bố giã từ sự nghiệp thi đấu quốc tế vào năm 2016, anh đã thay đổi quyết định và đưa đất nước của mình giành quyền tham dự FIFA World Cup 2018 và vô địch Copa América 2021. Anh tiếp tục dẫn dắt Argentina đến ngôi vương FIFA World Cup 2022, nơi anh lập kỷ lục với Quả bóng vàng World Cup thứ hai, đồng thời còn ghi 7 bàn thắng (trong đó có 2 bàn ở trận chung kết) và phá kỷ lục về số trận thi đấu tại World Cup (26 trận), sau đó anh nhận được Quả bóng vàng thứ tám kỷ lục vào năm 2023. Messi tiếp tục giành danh hiệu Copa América 2024 lần thứ hai với tư cách đội trưởng. Tại FIFA World Cup 2026, anh dẫn dắt đội tuyển quốc gia của mình vào chung kết World Cup lần thứ hai liên tiếp, giành được Chiếc giày Bạc và Quả bóng Bạc lần thứ hai liên tiếp.\nMessi đã được hãng đồ thể thao Adidas tài trợ từ năm 2006 và dần trở thành người quảng bá thương hiệu hàng đầu của họ. Theo France Football, anh là cầu thủ bóng đá được trả lương cao nhất thế giới trong 5 năm từ năm 2009 đến năm 2014, và được Forbes xếp hạng là vận động viên được trả lương cao nhất thế giới vào năm 2019. Messi nằm trong danh sách 100 người có ảnh hưởng nhất trên thế giới của Time trong năm 2011, 2012 và 2023. Anh được trao giải thưởng Thể thao Thế giới Laureus cho Vận động viên nam của năm vào các năm 2020 và 2023, trở thành cầu thủ bóng đá đầu tiên và cũng là vận động viên môn thể thao đồng đội đầu tiên giành được giải thưởng này. Năm 2020, Messi được vinh danh trong Ballon d'Or Dream Team và trở thành cầu thủ bóng đá thứ hai cũng như là vận động viên môn thể thao đồng đội thứ hai vượt qua cột mốc 1 tỷ USD thu nhập trong suốt sự nghiệp.",
+ "sections": [
+  {
+   "title": "Thiếu thời",
+   "paragraphs": [
+    "Messi sinh ngày 24 tháng 6 năm 1987 tại Rosario, Santa Fe, là con thứ ba trong số 4 người con của Jorge Messi (1958 - 2026), một quản lý nhà máy thép, và Celia Cuccittini, công nhân làm việc trong xưởng sản xuất nam châm. Bên nội của Messi có dòng dõi gốc Ý và Tây Ban Nha, là chắt của những người nhập cư từ vùng Marche thuộc miền bắc trung bộ Adriatic của nước Ý, còn bên ngoại của anh có tổ tiên chủ yếu là người Ý. Lớn lên trong một gia đình đầm ấm và đam mê bóng đá, nên \"Leo\" đã sớm phát triển tình yêu với môn thể thao này; thường xuyên chơi bóng cùng hai người anh ruột là Rodrigo và Matías, cũng như những người anh em họ là Maximiliano và Emanuel Biancucchi, cả hai sau này đều trở thành cầu thủ bóng đá chuyên nghiệp. Lúc 4 tuổi, anh gia nhập câu lạc bộ địa phương Grandoli, tại đây anh được chính cha mình huấn luyện, nhưng người có ảnh hưởng lớn nhất đối với Messi trong những ngày đầu sự nghiệp lại là bà ngoại của anh, Celia. Bà luôn đồng hành cùng anh trong các buổi tập và trận đấu. Anh đã bị ảnh hưởng sâu sắc bởi bởi sự ra đi của bà ngay trước sinh nhật tuổi 11; kể từ đó, là một tín hữu Công giáo mộ đạo, anh thường ăn mừng bàn thắng bằng việc ngước nhìn và chỉ tay lên trời như một cách để tưởng nhớ đến bà ngoại của mình."
+   ]
+  },
+  {
+   "title": "Sự nghiệp ở cấp độ trẻ",
+   "paragraphs": [
+    "Là một người hâm mộ trung thành của Newell's Old Boys, Messi gia nhập câu lạc bộ đến từ Rosario này khi mới 6 tuổi. Trong sáu năm chơi cho Newell's, anh đã ghi gần 500 bàn thắng với tư cách là thành viên của \"The Machine of '87\" (Những cỗ máy ghi bàn sinh năm 1987) – đội trẻ gần như bất khả chiến bại được đặt tên theo năm sinh của các cầu thủ, Messi thường xuyên chiêu đãi khán giả bằng những màn phô diễn kỹ thuật điêu luyện trong thời gian nghỉ giữa hiệp ở các trận đấu trên sân nhà của đội một. Thần tượng ghi bàn của Messi khi còn nhỏ là tiền đạo người Brazil Ronaldo, Messi từng gọi anh là \"tiền đạo xuất sắc nhất mà tôi từng thấy\".",
+    "Song tương lai trở thành cầu thủ chuyên nghiệp của Messi bị đe dọa khi lên 10 tuổi, anh được chẩn đoán mắc chứng thiếu hormone tăng trưởng. Vì bảo hiểm y tế của cha anh chỉ chi trả được cho hai năm điều trị hormone tăng trưởng, trong khi chi phí mỗi tháng tối thiểu lên tới 1.000 peso, nên Newell's đã đồng ý hỗ trợ nhưng sau đó lại nuốt lời. Anh được câu lạc bộ River Plate ở Buenos Aires để mắt đến, nơi cầu thủ kiến thiết thần tượng của anh Pablo Aimar đang thi đấu. Có thông tin cho rằng anh không được River Plate ký hợp đồng vì vấn đề sức khỏe, tuy nhiên trong một cuộc phỏng vấn năm 2019, Messi cho biết câu lạc bộ đã đề nghị chi trả tiền điều trị y tế cho anh nhưng cuối cùng vẫn từ chối.",
+    "Vì gia đình Messi có người thân sống ở Catalonia nên họ đã tìm cách sắp xếp cho Messi thử việc với Barcelona vào tháng 9 năm 2000. Giám đốc kỹ thuật Charly Rexach ngay lập tức muốn được ký hợp đồng với anh, nhưng ban lãnh đạo lại do dự; bởi vào thời điểm đó, việc các câu lạc bộ châu Âu ký hợp đồng với những cầu thủ nước ngoài ở độ tuổi trẻ như vậy là điều rất hiếm hoi. Ngày 14 tháng 12, gia đình Messi đã đưa ra tối hậu thư cho Barça nhằm chứng minh cam kết của họ, và Rexach lúc đó không mang theo tờ giấy nào trong người nên đã viết một bản hợp đồng trên tờ giấy ăn. Vào tháng 2 năm 2001, gia đình Leo chuyển đến Barcelona, sinh sống trong một căn hộ gần sân nhà của câu lạc bộ, Camp Nou. Trong năm đầu tiên của anh ở Tây Ban Nha, Messi hiếm khi được thi đấu cho Infantiles do còn mâu thuẫn trong vấn đề chuyển nhượng với Newell's; là một người ngoại quốc, anh chỉ có thể được ra sân trong các trận giao hữu và giải vô địch Catalan. Không có bóng đá, anh phải vật lộn để hòa nhập với đội bóng; vốn là người kín tiếng, anh ít nói đến mức những người đồng đội ban đầu tưởng rằng Messi bị câm. Anh còn phải trải qua quãng thời gian nhớ nhà sau khi mẹ anh chuyển về Rosario cùng với các anh trai và cô em gái María Sol, còn Messi vẫn ở lại Barcelona với cha mình.",
+    "Sau một năm theo học tại lò đào tạo trẻ La Masia của Barcelona, Messi cuối cùng đã được ghi danh vào Liên đoàn bóng đá Hoàng gia Tây Ban Nha (RFEF) vào tháng 2 năm 2002. Khi đã bắt đầu góp mặt ở tất cả các giải đấu, anh nhanh chóng kết bạn với nhiều người đồng đội trong đó có Cesc Fàbregas và Gerard Piqué. Sau khi hoàn thành liệu pháp điều trị hormone tăng trưởng ở tuổi 14, Messi trở thành một phần không thể thiếu của \"Baby Dream Team\", đội trẻ vĩ đại nhất từ trước đến nay của Barcelona. Trong mùa giải trọn vẹn đầu tiên của mình (2002–03), anh là vua phá lưới với 36 bàn sau 30 trận cho Cadetes A, giúp đội bóng giành được cú ăn ba vô tiền khoáng hậu bao gồm chức vô địch quốc gia, cúp Tây Ban Nha và cúp Catalan. Trận chung kết Copa Catalunya, chiến thắng 4–1 trước Espanyol, được biết đến trong lịch sử câu lạc bộ với cái tên partido de la máscara – trận chung kết của những chiếc mặt nạ. Một tuần sau khi bị gãy xương gò má trong một trận đấu tại giải vô địch quốc gia, Messi được phép ra sân với điều kiện phải đeo một miếng bảo vệ bằng nhựa; bị cản trở bởi chiếc mặt nạ, anh đã tháo nó ra và ghi hai bàn chỉ trong 10 phút trước khi rời sân. Vào cuối mùa giải, anh nhận được lời đề nghị gia nhập Arsenal – lần đầu tiên từ một câu lạc bộ nước ngoài – nhưng trong khi Fàbregas và Piqué sớm đến Anh, anh đã chọn ở lại đội bóng xứ Catalan.",
+    "Messi tiếp tục thăng tiến vượt bậc trong hệ thống đào tạo trẻ của câu lạc bộ, lần lượt ra mắt tại bốn đội trẻ khác nhau trong mùa giải 2003–04. Sau khi được vinh danh là cầu thủ xuất sắc nhất trong cả bốn giải đấu tiền mùa giải của Juvenil B, anh chỉ thi đấu một trận chính thức cho đội bóng này trước khi được đôn lên Juvenil A, nơi anh ghi được 18 bàn thắng sau 11 trận ra sân ở giải vô địch quốc gia. Messi là một trong số những cầu thủ trẻ được gọi lên nhằm tăng cường lực lượng cho đội một vốn đang bị thiếu hụt trong thời gian tạm nghỉ để thi đấu quốc tế. Cầu thủ chạy cánh người Pháp Ludovic Giuly đã chia sẻ về cách Messi thu hút sự chú ý trong một buổi tập với đội một của Frank Rijkaard: \"Cậu ấy hủy diệt tất cả chúng tôi... Ngay cả những trung vệ trụ cột của đội cũng cảm thấy lo lắng. Cậu ấy đúng là người ngoài hành tinh.\"",
+    "Ở tuổi 16, 4 tháng và 23 ngày, Messi có trận ra mắt đội một lần đầu tiên khi vào sân ở phút 75 trong trận giao hữu với Porto của José Mourinho vào ngày 16 tháng 11 năm 2003. Màn trình diễn của anh, với hai pha kiến tạo và một cú sút trúng đích, đã gây ấn tượng mạnh với ban huấn luyện. Sau đó, anh bắt đầu tập luyện hàng ngày với đội dự bị Barcelona B, cũng như hàng tuần với đội một. Sau buổi tập đầu tiên với đội một, ngôi sao mới của Barça, Ronaldinho, đã nói với các đồng đội rằng anh tin Messi lúc bấy giờ mới 16 tuổi sẽ trở thành một cầu thủ thậm chí còn xuất sắc hơn cả mình. Ronaldinho nhanh chóng kết bạn với Messi, gọi anh là \"tiểu đệ\" và giúp cho quá trình chuyển tiếp lên đội một của Messi trở nên dễ dàng hơn.",
+    "Để tích lũy thêm kinh nghiệm thi đấu, Messi đã gia nhập Barcelona C bên cạnh việc chơi cho Juvenil A. Anh ra mắt đội C vào ngày 29 tháng 11 và góp công lớn giúp họ thoát khỏi khu vực xuống hạng của Tercera División, ghi 5 bàn sau 10 trận – trong đó có một cú hat-trick chỉ trong 8 phút tại một trận đấu Copa del Rey khi bị hậu vệ Sergio Ramos của Sevilla theo sát. Sự tiến bộ của anh được phản ánh qua bản hợp đồng chuyên nghiệp đầu tiên của mình, được ký kết vào ngày 4 tháng 2 năm 2004, có thời hạn đến năm 2012 và đi kèm với điều khoản giải phóng hợp đồng ban đầu là 30 triệu euro. Một tháng sau, vào ngày 6 tháng 3, khi Messi ra mắt Barcelona B, điều khoản giải phóng của anh tự động tăng lên 80 triệu euro. Anh chơi 5 trận cho đội B trong mùa giải đó nhưng không ghi bàn nào. Về mặt thể chất, anh yếu hơn đối thủ của mình, những người thường to cao và lớn tuổi hơn anh, Messi đã nỗ lực tập luyện để tăng cường thể lực và sức mạnh nhằm thoát khỏi sự kèm cặp của hậu vệ đối phương. Anh kết thúc mùa giải khi đã lập công cho bốn trong số năm đội mà mình thi đấu với tổng cộng 36 bàn thắng trên mọi đấu trường."
+   ]
+  },
+  {
+   "title": "Sự nghiệp câu lạc bộ",
+   "paragraphs": [
+    "Messi bắt đầu mùa giải 2004–05 với một vị trí chắc suất trong đội hình xuất phát của Barcelona B, tuy nhiên nhờ sự vận động từ các cầu thủ đàn anh, anh đã được huấn luyện viên trưởng Frank Rijkaard đôn lên đội một. Anh có trận ra mắt tại La Liga trong màu áo Barcelona vào ngày 16 tháng 10 năm 2004 gặp Espanyol, cũng như ghi bàn thắng đầu tiên cho đội một vào ngày 1 tháng 5 năm 2005 trong cuộc đối đầu với Albacete từ đường kiến tạo của Ronaldinho. Với pha lập công này, Messi trở thành cầu thủ trẻ nhất ghi bàn cho câu lạc bộ vào thời điểm đó. Ở tuổi 17, 3 tháng và 22 ngày, anh đồng thời là cầu thủ trẻ nhất từng ra sân cho Barça trong một trận đấu chính thức, đội bóng xứ Catalan đã lên ngôi vô địch La Liga trong mùa giải đó.",
+    "Vào ngày sinh nhật tuổi 18 của anh, Messi ký hợp đồng chuyên nghiệp đầu tiên với tư cách là cầu thủ đội một. Hợp đồng này đã được gia hạn chỉ ba tháng sau đó, có thời hạn cho đến năm 2014. Barcelona khởi đầu mùa giải 2005–06 bằng việc giành Supercopa de España mà không có sự góp mặt của Messi do anh không được triệu tập vào đội hình tham dự giải đấu. Đến cuối mùa giải, đội bóng tiếp tục lên ngôi vô địch La Liga và cả UEFA Champions League, mặc dù Messi đã không thể ra sân trong trận chung kết Champions League vì chấn thương.",
+    "Trong mùa giải 2006–07, Messi lập hat-trick đầu tiên của mình trong trận El Clásico với Real Madrid, trở thành cầu thủ đầu tiên làm được điều này sau 12 năm. Một bàn thắng cực kỳ tinh tế của Messi vào lưới Getafe và một bàn thắng khác được ghi bằng tay trong trận gặp Espanyol đã thu hút sự chú ý vì chúng tương đồng với hai bàn thắng nổi tiếng của người đồng hương Argentina Diego Maradona trong trận tứ kết World Cup 1986 gặp Anh, làm dấy lên những sự so sánh giữa hai người – điều mà Messi sẽ phải đối mặt trong xuyên suốt sự nghiệp của mình. Đội bóng kết thúc mùa giải chỉ với một danh hiệu duy nhất – Supercopa de España 2006. Mùa giải 2007–08 tiếp theo chứng kiến Barcelona trắng tay, dẫn đến việc Rijkaard rời câu lạc bộ.",
+    "Vào đầu mùa giải 2008–09, mùa giải đầu tiên dưới sự dẫn dắt của tân huấn luyện viên trưởng Barcelona, cựu đội trưởng Pep Guardiola, Messi được trao chiếc áo số 10. Dần dà, anh trở thành hạt nhân trong chiến thuật kiểm soát bóng của Guardiola, giúp nâng cao đáng kể hiệu suất ghi bàn của bản thân. Trong mùa giải đó, Messi đã có tổng cộng 38 lần chọc thủng lưới và cùng với Samuel Eto'o và Thierry Henry đóng góp vào kỷ lục 100 bàn thắng trên mọi đấu trường của Blaugrana vào thời điểm đó. Messi lần đầu chơi như một Số 9 ảo trong trận El Clásico với Real Madrid, nơi anh kiến tạo bàn thắng mở tỷ số và tự mình ghi hai bàn, góp phần tạo nên chiến thắng đậm nhất từ trước đến nay của của câu lạc bộ tại sân vận động Santiago Bernabéu. Anh cũng thi đấu trong trận chung kết đầu tiên của sự nghiệp, nơi Barcelona giành chức vô địch Copa del Rey. Chưa dừng lại ở đó, đội bóng xứ Catalan tiếp tục đăng quang tại La Liga và Champions League, hoàn tất cú ăn ba đầu tiên trong lịch sử bóng đá Tây Ban Nha.",
+    "Trong nửa đầu mùa giải 2009–10, Barcelona còn giành được Supercopa de España, UEFA Super Cup và FIFA Club World Cup – qua đó trở thành câu lạc bộ đầu tiên trong lịch sử đạt được cú ăn sáu. Messi kết thúc mùa giải với danh hiệu Vua phá lưới Champions League, trở thành cầu thủ trẻ nhất trong lịch sử giải đấu đạt được thành tích này. Nhờ những cống hiến trong năm 2009, anh đã giành được cả Quả bóng vàng và giải thưởng Cầu thủ xuất sắc nhất năm của FIFA. Siêu sao người Argentina ghi tổng cộng 47 bàn thắng trên mọi đấu trường, san bằng kỷ lục ghi bàn của Ronaldo trong mùa giải 1996–97. Anh kết thúc mùa giải 2009–10 không chỉ là Vua phá lưới tại Champions League và La Liga mà còn giúp đội bóng giành chức vô địch quốc gia lần thứ hai liên tiếp, đồng thời đoạt Chiếc giày vàng châu Âu đầu tiên trong sự nghiệp.",
+    "Trong mùa giải 2010–11, Messi giành được Supercopa de España, Champions League, và chức vô địch La Liga lần thứ ba liên tiếp. Những màn trình diễn của anh trong màu áo câu lạc bộ vào năm 2010 đã mang về cho anh Quả bóng vàng lần thứ hai liên tiếp. Messi tiếp tục giữ vững danh hiệu Vua phá lưới Champions League trong năm thứ ba liên tiếp, đồng thời dẫn đầu La Liga cả về số bàn thắng lẫn số pha kiến tạo. Anh còn trở thành cầu thủ ghi bàn nhiều nhất trong một mùa giải của Barcelona, với tổng cộng 53 pha lập công.",
+    "Messi khởi đầu mùa giải 2011–12 bằng việc giành cả hai danh hiệu Supercopa de España và UEFA Super Cup. Vào cuối năm, anh tiếp tục đoạt FIFA Club World Cup và được nhận Quả bóng vàng của giải đấu lần thứ hai. Với những cống hiến vượt bậc trong năm 2011, Messi đã được trao Quả bóng vàng FIFA, trở thành cầu thủ thứ tư trong lịch sử ba lần giành được Quả bóng vàng, và là người đầu tiên nhận giải thưởng Cầu thủ nam xuất sắc nhất năm của UEFA. Trong năm 2012, Messi trở thành cầu thủ thứ hai trong lịch sử đạt danh hiệu Vua phá lưới ở bốn mùa giải Champions League. Ở tuổi 24, anh trở thành cầu thủ ghi nhiều bàn thắng nhất trong lịch sử Barça, vượt qua kỷ lục 232 bàn thắng tồn tại suốt 57 năm của César Rodríguez bằng cú hat-trick vào lưới Granada. Messi khép lại mùa giải 2011–12 với danh hiệu Vua phá lưới La Liga và châu Âu lần thứ hai, ghi được 50 bàn thắng – một kỷ lục chưa từng có tại La Liga, trong khi 73 bàn thắng trên mọi đấu trường giúp anh trở thành cầu thủ ghi nhiều bàn thắng nhất trong một mùa giải trong lịch sử bóng đá cấp câu lạc bộ ở châu Âu (không tính các giải đấu khu vực và địa phương). Đội bóng xứ Catalan cũng giành chức vô địch Copa del Rey, nâng tổng số danh hiệu dưới thời Guardiola lên con số 14. Sau bốn năm thành công rực rỡ, Guardiola tuyên bố chia tay Barcelona sau khi mùa giải kết thúc.",
+    "Vào đầu mùa giải 2012–13, Barcelona gần như đã chắc chắn giành chức vô địch La Liga ngay từ đầu năm 2013. Với cú đúp vào lưới Real Betis, Messi không chỉ trở thành cầu thủ ghi nhiều bàn thắng nhất mọi thời đại của Blaugrana tại La Liga mà còn phá kỷ lục của Gerd Müller về số bàn thắng ghi được trong một năm dương lịch; Messi đã ghi kỷ lục 91 bàn thắng trên mọi đấu trường cho cả Barcelona và đội tuyển Argentina trong suốt năm 2012. Messi tiếp tục đoạt Quả bóng vàng FIFA, trở thành cầu thủ đầu tiên trong lịch sử bốn lần giành được Quả bóng vàng. Anh cũng ký một bản hợp đồng mới có thời hạn đến năm 2018. Ngoài ra, Messi lần đầu đeo băng đội trưởng trong một trận đấu tại giải vô địch quốc gia gặp Rayo Vallecano. Tầm ảnh hưởng của Messi trên hàng công Barça đã tăng lên đáng kể; từ mức đóng góp 24% trong mùa giải giành cú ăn ba, tỷ lệ đóng góp vào bàn thắng của anh đã vượt mốc 40% ở mùa giải này. Những thông số ấn tượng nêu trên, cùng với các trận thua nặng nề ở Champions League khi Messi không đạt thể trạng tốt nhất, đã làm nổi bật khái niệm Messidependencia – sự phụ thuộc về mặt chiến thuật và tâm lý của Barcelona vào ngôi sao người Argentina. Câu lạc bộ tiếp tục giành chức vô địch La Liga trong năm đó, danh hiệu thứ sáu của Messi, đồng thời cân bằng kỷ lục 100 điểm của Real Madrid từ mùa giải trước. Với 60 bàn thắng trên mọi đấu trường – trong đó có 46 bàn tại La Liga – anh đã kết thúc mùa giải với danh hiệu Vua phá lưới ở cả La Liga và châu Âu lần thứ hai liên tiếp, trở thành cầu thủ đầu tiên trong lịch sử ba lần đoạt Chiếc giày vàng châu Âu.",
+    "Để san sẻ gánh nặng cho Messi, Barcelona đã chiêu mộ tiền đạo người Brazil Neymar từ Santos trước thềm mùa giải 2013–14. Đội bóng đã giành được Supercopa de España ngay đầu mùa. Dù vậy, Messi kết thúc mùa giải với thành tích ghi bàn kém nhất trong 5 mùa gần nhất, dẫu anh vẫn ghi được 41 bàn thắng trên mọi đấu trường. Lần đầu tiên sau 5 năm, Barça khép lại mùa giải mà không giành được bất kỳ danh hiệu lớn nào.",
+    "Barcelona đã bổ nhiệm Luis Enrique làm tân huấn luyện viên trưởng trước thềm mùa giải 2014–15 và tiếp tục củng cố sức mạnh hàng công để hỗ trợ siêu sao người Argentina bằng việc chiêu mộ tiền đạo người Uruguay Luis Suárez, người giành Chiếc giày vàng châu Âu mùa trước trong màu áo Liverpool. Hệ thống chiến thuật của Luis Enrique tập trung vào những pha chuyển trạng thái nhanh chóng từ phòng ngự sang tấn công, với mũi nhọn là bộ ba tấn công Messi, Suárez và Neymar. Bộ ba tấn công này, thường được gọi một cách thân mật là 'MSN', đã xô đổ hàng loạt kỷ lục ghi bàn. Cú hat-trick được Messi ghi vào lưới Sevilla trong giai đoạn đầu mùa giải đã giúp anh trở thành cầu thủ ghi nhiều bàn thắng nhất mọi thời đại ở La Liga, vượt qua kỷ lục 59 năm với 251 bàn thắng của Telmo Zarra. Sau khi giúp Barcelona đăng quang ngôi vô địch La Liga, Copa del Rey và Champions League trong mùa giải đó, Messi đã góp phần giúp đội bóng xứ Catalan trở thành câu lạc bộ đầu tiên trong lịch sử giành cú ăn ba châu lục hai lần. Riêng Messi đã ghi tổng cộng 58 bàn thắng, còn khi kết hợp với Neymar và Suárez, bộ ba MSN đã ghi được 122 bàn thắng trên mọi đấu trường trong mùa giải đó, thiết lập một kỷ lục chưa từng có trong lịch sử bóng đá Tây Ban Nha.",
+    "Messi bắt đầu mùa giải 2015–16 bằng việc góp công vào chiến thắng của Barça trước Sevilla trong trận tranh UEFA Super Cup. Cuối năm, anh tiếp tục tỏa sáng khi dẫn dắt Barcelona đánh bại River Plate trong trận chung kết FIFA Club World Cup tại Yokohama, mang về danh hiệu thứ năm cho câu lạc bộ trong năm dương lịch 2015. Vào ngày 11 tháng 1 năm 2016, Messi được trao Quả bóng vàng FIFA lần thứ năm trong sự nghiệp, một kỷ lục vô tiền khoáng hậu. Anh kết thúc mùa giải bằng việc bảo vệ thành công chức vô địch La Liga và Copa del Rey. Trong mùa giải này, Messi đã ghi tổng cộng 41 bàn thắng, trong khi bộ ba MSN đã tạo nên cột mộc mới trong lịch sử bóng đá Tây Ban Nha với tổng cộng 131 bàn thắng trên mọi đấu trường, phá vỡ kỷ lục mà chính họ đã thiết lập từ mùa giải trước.",
+    "Mùa giải 2016–17 khép lại với việc Messi giành được hai danh hiệu cùng Barcelona: Supercopa de España và Copa del Rey. Anh kết thúc mùa giải với 54 bàn thắng trên mọi đấu trường, trong đó 37 bàn tại La Liga giúp anh đoạt danh hiệu Pichichi và Chiếc giày vàng châu Âu thứ tư trong sự nghiệp. Messi, Neymar và Suárez đã cùng nhau ghi tổng cộng 110 bàn thắng trong mùa giải này. Tuy nhiên, Neymar đã chuyển sang Paris Saint Germain vào mùa hè năm 2017, khép lại hành trình ba mùa giải đầy thành công của MSN với tổng cộng 363 bàn thắng. Luis Enrique cũng chia tay Barcelona vào cuối mùa giải sau khi đã mang về tổng cộng 9 danh hiệu trong ba năm dẫn dắt Blaugrana.",
+    "Vào ngày 25 tháng 11 năm 2017, Messi đã ký bản hợp đồng mới với Barcelona có thời hạn đến năm 2021. Mùa giải 2017–18 chứng kiến anh giành cú đúp quốc nội khi cùng Barça giành chức vô địch La Liga và Copa del Rey thêm một lần nữa. Anh kết thúc mùa giải với tư cách là vua phá lưới La Liga, ghi được 34 bàn thắng – qua đó đoạt Chiếc giày vàng châu Âu lần thứ năm. Sau sự ra đi của cựu đội trưởng Andrés Iniesta vào tháng 5 năm 2018, Messi được bổ nhiệm làm đội trưởng mới của câu lạc bộ từ mùa giải 2018–19. Anh đã giành danh hiệu đầu tiên với tư cách thủ quân khi nâng cao chức vô địch Supercopa de España sau chiến thắng 2–1 trước Sevilla. Messi tiếp tục dẫn dắt đội bóng đến ngôi vương La Liga, chức vô địch quốc gia thứ mười trong sự nghiệp của anh, nhưng là lần đầu tiên với vai trò đội trưởng. Với 36 pha lập công sau 34 trận ra sân ở mùa giải này, anh giành được danh hiệu Vua phá lưới La Liga lần thứ sáu, qua đó san bằng kỷ lục của Zarra. Ngoài ra, anh còn nhận Chiếc giày vàng châu Âu lần thứ sáu, thiết lập kỷ lục mới với ba mùa giải liên tiếp giành danh hiệu này kể từ mùa giải 2016–17.",
+    "Messi giành Quả bóng vàng thứ sáu trong sự nghiệp, nhưng mùa giải 2019–20 lại chứng kiến Barcelona không giành được bất kỳ danh hiệu nào lần đầu tiên kể từ mùa giải 2007–08. Sau một mùa giải đáng thất vọng, Barcelona thông báo rằng Messi đã gửi đến câu lạc bộ \"một văn bản bày tỏ mong muốn được ra đi\", song cuối cùng Messi vẫn quyết định hoàn thành năm cuối cùng của hợp đồng. Trong mùa giải 2020–21, Messi với 768 lần ra sân đã vượt qua kỷ lục của Xavi để trở thành cầu thủ có số lần ra sân nhiều nhất trong lịch sử câu lạc bộ. Anh dẫn dắt Barcelona giành chiến thắng tại trận chung kết Copa del Rey 2021. Trong hai mùa giải cuối cùng khoác áo Barcelona, Messi tiếp tục dẫn đầu La Liga về số bàn thắng, qua đó nâng tổng số danh hiệu Pichichi của mình lên con số 8.",
+    "Messi trở thành cầu thủ tự do sau khi hợp đồng của anh với Barcelona hết hạn, trong bối cảnh các cuộc đàm phán về một bản hợp đồng mới gặp nhiều khó khăn do vấn đề tài chính của câu lạc bộ. Cuối cùng, Barcelona thông báo rằng Messi sẽ không thể tiếp tục gắn bó với đội bóng, viện dẫn những rào cản về tài chính và cơ cấu do các quy định của La Liga tạo ra. Trong một cuộc họp báo đẫm nước mắt được tổ chức tại Camp Nou, Messi xác nhận rằng anh sẽ rời Barcelona.",
+    "Vào ngày 10 tháng 8 năm 2021 – tức chỉ vài ngày sau khi mùa giải 2021–22 khởi tranh, Messi gia nhập câu lạc bộ Ligue 1 Paris Saint-Germain (PSG), tái ngộ đồng đội cũ Neymar, với bản hợp đồng có thời hạn hai năm kéo dài đến tháng 6 năm 2023 kèm theo tùy chọn gia hạn thêm một năm. Messi đã chọn khoác áo số 30, số áo anh từng mang khi ra mắt đội một Barcelona thời niên thiếu. Messi có trận ra mắt PSG trong trận đấu với Reims, lần đầu đá chính và ra mắt đấu trường Champions League trong trận đấu gặp Club Brugge và có trận đấu đầu tiên trên sân nhà trước Lyon Bàn thắng đầu tiên của anh cho PSG được ghi trong chiến thắng tại vòng bảng Champions League trước Manchester City của cựu huấn luyện viên Pep Guardiola. Với 40 pha lập công trong năm dương lịch ở cả cấp độ câu lạc bộ lẫn đội tuyển quốc gia, cùng với việc dẫn dắt Argentina đến ngôi vương Copa América 2021, Messi nhận được Quả bóng vàng thứ bảy, một kỷ lục chưa từng có. Kết thúc mùa giải đầu tiên tại PSG, Messi ghi được 11 bàn thắng và có 14 pha kiến tạo trên mọi đấu trường, góp phần giúp đội bóng thủ đô Paris giành chức vô địch Ligue 1 lần thứ 10 trong lịch sử.",
+    "Bắt đầu mùa giải 2022–23, Messi giành danh hiệu thứ hai cùng PSG khi câu lạc bộ lên ngôi vô địch Trophée des Champions. Một bàn thắng vào lưới Nice đã giúp anh vượt qua Cristiano Ronaldo để trở thành cầu thủ ghi nhiều bàn thắng nhất mọi thời đại trong lịch sử bóng đá cấp câu lạc bộ ở châu Âu với 702 bàn thắng; cũng trong trận đấu đó, anh đạt cột mốc 1.000 lần đóng góp trực tiếp vào bàn thắng trong sự nghiệp cấp câu lạc bộ. Đến cuối mùa giải, Messi ghi được 21 bàn thắng trên mọi đấu trường và dẫn đầu danh sách kiến tạo tại Ligue 1 với 16 đường chuyền thành bàn, góp phần quan trọng giúp PSG giành chức vô địch Ligue 1 lần thứ 11 và là lần thứ hai liên tiếp của siêu sao người Argentina. Sau trận đấu cuối cùng của mùa giải, huấn luyện viên trưởng Christophe Galtier xác nhận rằng đây là trận đấu cuối cùng của Messi trong màu áo PSG. Hai ngày sau, câu lạc bộ chính thức thông báo về sự ra đi của anh.",
+    "Câu lạc bộ Major League Soccer Inter Miami đã công bố việc chiêu mộ Messi theo bản hợp đồng có thời hạn hai năm rưỡi vào ngày 15 tháng 7 năm 2023. Messi ra mắt Inter Miami trong trận đấu tại Leagues Cup gặp Cruz Azul, nơi anh ghi bàn thắng quyết định bằng một quả đá phạt ở phút bù giờ, mang về chiến thắng cho câu lạc bộ. Trong sáu trận đầu tiên khoác áo Inter Miami, Messi ghi được 9 bàn thắng cũng như dẫn dắt đội bóng giành danh hiệu đầu tiên trong lịch sử với chức vô địch Leagues Cup sau khi đánh bại Nashville SC. Messi có trận ra mắt tại MLS trong cuộc đối đầu với New York Red Bulls. Tuy nhiên, Miami đã không thể giành vé vào vòng play-off, kết thúc mùa giải ở vị trí thứ 14 tại Liên đoàn phía Đông, sau khi trải qua chuỗi 7 trận liên tiếp không thắng cuối mùa. Vào ngày 30 tháng 10 năm 2023, sau chức vô địch World Cup cùng Argentina và danh hiệu Ligue 1 với PSG, Messi đã giành Quả bóng vàng thứ tám – một kỷ lục chưa từng có. Anh còn được tạp chí Time vinh danh là Vận động viên của năm, trở thành cầu thủ bóng đá đầu tiên trong lịch sử được vinh dự này.",
+    "Trong mùa giải 2024, Messi đã phá kỷ lục về số pha kiến tạo nhiều nhất trong một trận đấu tại MLS với 5 đường chuyền thành bàn cũng như phá kỷ lục về số lần đóng góp vào bàn thắng nhiều nhất trong một trận đấu tại MLS với 6 lần (5 kiến tạo và 1 bàn thắng) trong chiến thắng 6–2 trước New York Red Bulls. Vào ngày 2 tháng 10, Messi lập cú đúp trong chiến thắng 3–2 trước Columbus Crew, qua đó giúp Inter Miami giành chức vô địch Supporters' Shield, danh hiệu thứ 46 trong sự nghiệp của anh. Trong trận đấu cuối cùng của mùa giải thường niên gặp New England Revolution vào ngày 19 tháng 10, Messi đã lập hat-trick đầu tiên cho câu lạc bộ, góp phần vào chiến thắng 6–2. Trận thắng này còn giúp Miami có được 74 điểm trong mùa giải thường niên, phá kỷ lục về số điểm cao nhất trong một mùa giải MLS. Messi khép lại mùa giải thường niên với 20 bàn thắng và 16 pha kiến tạo sau 19 trận đấu, trở thành cầu thủ ghi nhiều bàn thắng nhất trong lịch sử đội bóng chủ sân Chase.",
+    "Miami lần đầu góp mặt ở vòng play-off MLS Cup 2024 nhưng họ đã phải dừng chân ngay từ vòng đầu tiên sau khi để thua hai trận trước Atlanta United. Messi ghi bàn thắng đầu tiên của mình ở vòng play-off trong trận đấu thứ ba, song đội bóng vẫn nhận thất bại với tỷ số 3–2. Dù vậy, với màn trình diễn chói sáng trong suốt mùa giải thường niên, Messi đã được vinh danh là Cầu thủ xuất sắc nhất MLS.",
+    "Trong mùa giải 2025, Messi đã trở thành cầu thủ đạt 40 bàn thắng tại giải vô địch quốc gia nhanh nhất trong lịch sử MLS. Anh khép lại mùa giải bằng việc giành Chiếc giày vàng MLS dành cho vua phá lưới của giải, với 29 bàn thắng và 19 pha kiến tạo sau 28 trận. Vào ngày 23 tháng 10, anh đã ký gia hạn hợp đồng với câu lạc bộ đến năm 2028. Trong trận chung kết Liên đoàn miền Đông gặp New York City FC, một pha kiến tạo của Messi đã nâng tổng số pha kiến tạo trong sự nghiệp của anh trên mọi đấu trường lên con số 405, vượt qua Ferenc Puskás để trở thành cầu thủ có nhiều pha kiến tạo nhất mọi thời đại. Messi đã dẫn dắt Miami đến trận đấu MLS Cup 2025, nơi họ giành chiến thắng 3–1 trước Vancouver Whitecaps để mang về chức vô địch giải đấu đầu tiên cho đội bóng. Với hai pha kiến tạo trong trận đấu này, Messi đã được vinh danh là Cầu thủ xuất sắc nhất MLS Cup. Vào cuối mùa giải, Messi một lần nữa được vinh danh là Cầu thủ xuất sắc nhất MLS (MLS MVP), qua đó trở thành cầu thủ đầu tiên trong lịch sử giải đấu giành được giải thưởng này trong hai năm liên tiếp.",
+    "Vào tháng 3 năm 2026, có thông tin cho biết Messi đang kiếm được từ 70 đến 80 triệu USD mỗi năm tại Inter Miami từ tiền lương và quyền lợi cổ phần. Ngày 18 tháng 3 năm 2026, Messi ghi bàn thắng thứ 900 trong sự nghiệp ở trận hòa 1–1 của Inter Miami trước Nashville tại CONCACAF Champions Cup. Anh trở thành cầu thủ thứ hai chạm mốc này trong lịch sử bóng đá nam đỉnh cao, sau Cristiano Ronaldo."
+   ]
+  },
+  {
+   "title": "Sự nghiệp quốc tế",
+   "paragraphs": [
+    "Với tư cách là công dân mang hai quốc tịch Argentina và Tây Ban Nha, Messi đủ điều kiện để thi đấu cho đội tuyển quốc gia của cả hai nước. Anh ra mắt đội tuyển U20 Argentina vào năm 2004 trong trận đấu với Paraguay và sau đó được triệu tập vào đội hình tham dự Giải vô địch bóng đá U-20 Nam Mỹ 2005, nơi họ giành vị trí thứ ba. Messi tiếp tục dẫn dắt U20 Argentina đến ngôi vương Giải vô địch bóng đá trẻ thế giới 2005, đánh dấu thành công đầu tiên của anh trong màu áo đội tuyển quốc gia. Kết thúc giải đấu với 6 bàn thắng và 2 pha kiến tạo, anh cũng được trao Quả bóng vàng.",
+    "Messi có trận ra mắt đội tuyển quốc gia Argentina vào năm 2005 ở tuổi 18 khi được tung vào sân từ băng ghế dự bị trong trận giao hữu với Hungary. Đến năm 2006, Messi có trận đấu đầu tiên được đá chính gặp Peru và ghi bàn thắng quốc tế đầu tiên trong trận giao hữu với Croatia. Lần đầu tiên Messi tham dự World Cup là tại FIFA World Cup 2006, khi anh vào sân từ ghế dự bị ở phút 74 trong trận gặp Serbia và Montenegro. Trong trận này, Messi ghi bàn thắng ấn định chiến thắng, trở thành cầu thủ trẻ nhất từng thi đấu và ghi bàn cho Argentina ở một kỳ World Cup. Messi tiếp tục khoác áo đội tuyển quốc gia tham dự Copa América 2007, nơi Argentina tiến đến trận chung kết nhưng để thua trước Brazil. Dẫu vậy, Messi được vinh danh là Cầu thủ trẻ xuất sắc nhất giải đấu với 2 bàn thắng và 1 pha kiến tạo. Thế vận hội Mùa hè 2008 đánh dấu một cột mốc quan trọng khác trong sự nghiệp quốc tế của Messi. Anh dẫn dắt đội tuyển U23 Argentina giành huy chương vàng Thế vận hội sau khi đánh bại Nigeria trong trận chung kết. Trong suốt giải đấu, Messi có 2 bàn thắng và 3 pha kiến tạo, đồng thời được FIFA đánh giá là cầu thủ nổi bật nhất trong đội hình xuất sắc của giải.",
+    "Sau khi Juan Román Riquelme giã từ sự nghiệp thi đấu quốc tế, Messi đã được trao chiếc áo số 10 của đội tuyển Argentina. Trong trận đấu vòng bảng FIFA World Cup 2010 gặp Hy Lạp, khi phần lớn các cầu thủ chủ chốt được nghỉ ngơi do La Albiceleste đã chắc suất vào vòng loại trực tiếp, Messi lần đầu được đeo băng đội trưởng. Tuy nhiên, Argentina đã bị loại ở vòng tứ kết sau thất bại trước Đức. Mặc dù không ghi được bàn thắng nào và chỉ có một pha kiến tạo trong suốt giải đấu, Messi vẫn được đánh giá là một trong 10 cầu thủ xuất sắc nhất giải nhờ vào tốc độ và khả năng sáng tạo của mình. Trước thềm Copa América 2011, Sergio Batista được bổ nhiệm làm huấn luyện viên trưởng và bắt đầu xây dựng đội hình xoay quanh Messi. Dù thi đấu nổi bật với ba pha kiến tạo, Messi vẫn không thể ghi bàn trong suốt giải đấu. Argentina dừng bước ở tứ kết sau thất bại trước Uruguay trên loạt sút luân lưu. Sau màn trình diễn không như mong đợi tại Copa América, Batista bị thay thế bởi Alejandro Sabella, người đã quyết định trao băng đội trưởng cho Messi khi mới 24 tuổi, đánh dấu một bước ngoặt quan trọng trong sự nghiệp quốc tế của anh.",
+    "Những năm tiếp theo chứng kiến nhiều thất vọng đối với Messi do anh không thể dẫn dắt Argentina giành được một danh hiệu quốc tế nào. Tại FIFA World Cup 2014, Messi và La Albiceleste để thua Đức trong trận chung kết. Song nhờ màn trình diễn xuất sắc với 4 bàn thắng và 1 pha kiến tạo xuyên suốt giải đấu, Messi vẫn được trao Quả bóng vàng – danh hiệu dành cho cầu thủ xuất sắc nhất giải. Một năm sau, Argentina để thua Chile trên chấm luân lưu trong trận chung kết Copa América 2015. Messi – với thành tích một bàn thắng và ba pha kiến tạo – được chọn để nhận Quả bóng vàng của giải, nhưng anh đã từ chối danh hiệu này. Tại Copa América Centenario 2016, Messi lập một cột mốc quan trọng trong sự nghiệp khi ghi bàn vào lưới Hoa Kỳ ở bán kết, qua đó vượt qua Gabriel Batistuta để trở thành cầu thủ ghi nhiều bàn thắng nhất trong lịch sử đội tuyển Argentina. Tuy nhiên, Argentina một lần nữa bị Chile đánh bại trên loạt sút phạt đền trong trận chung kết. Messi đã có tổng cộng năm bàn thắng và bốn pha kiến tạo trong suốt giải đấu.",
+    "Việc thua ba trận chung kết liên tiếp trong ba năm đã khiến Messi tuyên bố từ giã sự nghiệp thi đấu quốc tế. Tuy nhiên, một chiến dịch kêu gọi của người hâm mộ tại Argentina đã thuyết phục anh thay đổi quyết định và trở lại cống hiến cho đội tuyển quốc gia. Messi trở lại và dẫn dắt đội tuyển Argentina giành vé tham dự FIFA World Cup 2018. Trong trận đấu cuối cùng vòng loại gặp Ecuador, khi Argentina đứng trước nguy cơ không thể góp mặt tại ngày hội bóng đá lớn nhất hành tinh, Messi đã lập hat-trick giúp đội tuyển vượt qua khó khăn và giành quyền vào vòng chung kết. Tại World Cup, Argentina bị Pháp loại ở vòng 16 đội, Messi có một bàn thắng và hai pha kiến tạo trong suốt giải đấu. Một năm sau, dưới sự dẫn dắt của tân huấn luyện viên trưởng Lionel Scaloni, Messi một lần nữa khoác áo đội tuyển Argentina tham dự Copa América 2019, nơi anh chỉ ghi được một bàn thắng và có một pha kiến tạo. Argentina bị đội chủ nhà Brazil đánh bại ở bán kết nhưng rời giải với vị trí thứ ba sau khi hạ gục Chile trong trận tranh hạng ba.",
+    "Messi cuối cùng đã chấm dứt cơn khát danh hiệu kéo dài 28 năm của Argentina tại Copa América 2021, khi họ chưa từng giành được một giải đấu quốc tế nào kể từ năm 1993. Trong giải đấu này, anh vượt qua Javier Mascherano để trở thành cầu thủ khoác áo đội tuyển Argentina nhiều nhất trong trận đấu vòng bảng gặp Bolivia. Argentina đã đánh bại Brazil trong trận chung kết; Messi đóng góp trực tiếp vào 9 trong số 12 bàn thắng mà Argentina ghi được (4 bàn thắng và 5 pha kiến tạo), qua đó được vinh danh là Cầu thủ xuất sắc nhất giải. Tiếp nối thành công, Messi dẫn dắt Argentina giành thêm một danh hiệu quốc tế nữa tại Finalissima 2022 khi đội bóng Nam Mỹ đối đầu với Ý, đội vô địch UEFA Euro 2020. Trong trận đấu này, Messi đã thực hiện hai pha kiến tạo và được vinh danh là Cầu thủ xuất sắc nhất trận đấu. Tại FIFA World Cup 2022, Messi đã dẫn dắt Argentina đến chức vô địch World Cup đầu tiên sau 36 năm mòn mỏi chờ đợi khi đánh bại Pháp trong trận chung kết. Messi trở thành cầu thủ đầu tiên trong lịch sử ghi bàn ở mọi giai đoạn của World Cup bao gồm vòng bảng, vòng 16 đội, tứ kết, bán kết và chung kết. Anh ghi tổng cộng 7 bàn thắng và có 3 pha kiến tạo, đồng thời là người đầu tiên hai lần giành Quả bóng vàng World Cup. Với việc góp mặt trong trận chung kết, Messi đã thiết lập những kỷ lục mới: cầu thủ có số lần ra sân nhiều nhất tại World Cup (26) và số lần đóng góp trực tiếp vào bàn thắng nhiều nhất tại World Cup (21 – 13 bàn thắng và 8 pha kiến tạo). Anh còn lập kỷ lục về số bàn thắng cho đội tuyển Argentina trong một năm dương lịch với 18 pha lập công.",
+    "Cú hat-trick ghi được trong trận giao hữu năm 2023 gặp Curaçao đã giúp Messi chạm mốc 100 bàn thắng cho đội tuyển quốc gia; anh trở thành cầu thủ thứ ba và là người Nam Mỹ đầu tiên trong lịch sử đạt được thành tích này. Cuối năm đó, một bàn thắng vào lưới Peru trong trận đấu vòng loại World Cup 2026 đã giúp Messi trở thành cầu thủ ghi nhiều bàn thắng nhất mọi thời đại ở vòng loại World Cup khu vực CONMEBOL. Messi ra sân trong trận mở màn Copa América 2024 gặp Canada, xác lập kỷ lục mới về tổng số lần ra sân tại Copa América (35). Ở trận bán kết một lần nữa gặp Canada, anh ghi bàn thắng đầu tiên và duy nhất của mình tại giải đấu, đưa anh trở thành cầu thủ ghi nhiều bàn thắng quốc tế thứ hai mọi thời đại. Argentina sau đó giành chiến thắng trước Colombia trong trận chung kết, nâng tổng số lần ra sân của Messi tại giải đấu này lên 39 trận, đồng thời đánh dấu chức vô địch Copa América thứ hai liên tiếp của Argentina và là danh hiệu quốc tế lớn thứ ba liên tiếp của Messi trong vai trò đội trưởng.",
+    "Tại World Cup 2026, anh ghi 8 bàn và đóng góp 4 pha kiến tạo, vượt qua Miroslav Klose cùng Marta để trở thành chân sút vĩ đại nhất lịch sử World Cup tính ở cả giải nam và nữ, trước khi kỷ lục này bị Kylian Mbappé xô đổ ngay trong cùng giải đấu. Anh cũng thiết lập kỷ lục mới về tổng số pha kiến tạo thành bàn tại World Cup (12 lần) kể từ khi dữ liệu bắt đầu được thu thập vào năm 1966. Messi tiếp tục đưa Argentina lọt vào trận chung kết World Cup lần thứ hai liên tiếp, nhưng lần này đội đã để thua 0–1 trước Tây Ban Nha trong hiệp phụ. Cá nhân anh nhận danh hiệu Chiếc giày bạc (dành cho cầu thủ ghi bàn nhiều thứ hai tại giải đấu) và Quả bóng bạc (dành cho cầu thủ xuất sắc thứ hai tại giải đấu).",
+    "Ngày 31 tháng 8 năm 2026, ngay sau khi kỳ World Cup khép lại, Messi chính thức tuyên bố giã từ sự nghiệp quốc tế, kết thúc hành trình 21 năm cống hiến cho bóng đá Argentina. Anh chia tay màu áo quốc gia với tư cách là cầu thủ ra sân nhiều nhất và chân sút vĩ đại nhất lịch sử đội tuyển, cùng bộ sưu tập danh hiệu bao gồm Copa América 2021, World Cup 2022 và Copa América 2024."
+   ]
+  },
+  {
+   "title": "Hồ sơ cầu thủ",
+   "paragraphs": [
+    "Do dáng người nhỏ nhắn, Messi có trọng tâm thấp hơn so với nhiều cầu thủ khác, song nó mang lại cho anh sự nhanh nhẹn, cho phép anh đổi hướng nhanh hơn và né tránh những pha vào bóng của đối phương; điều này đã khiến giới truyền thông Tây Ban Nha đặt cho anh biệt danh La Pulga Atómica (\"Bọ chét nguyên tử\"). Mặc dù có thể hình không quá lý tưởng, nhưng Messi lại sở hữu sức mạnh phần thân trên đáng kể, cùng với trọng tâm thấp và khả năng giữ thăng bằng, qua đó cho phép anh chống chọi lại những áp lực vật lý từ đối phương. Bên cạnh đó, Messi cũng được công nhận là một cầu thủ không mấy khi ăn vạ trong một môn thể thao đầy rẫy những tình huống tiểu xảo. Đôi chân ngắn và khỏe của Messi cho phép anh thực hiện những pha bứt tốc trong phạm vi ngắn đồng thời giúp anh giữ quyền kiểm soát bóng khi rê bóng ở tốc độ cao. Cựu huấn luyện viên của Barcelona Pep Guardiola từng tuyên bố, \"Messi là cầu thủ duy nhất chạy với bóng còn nhanh hơn khi không có bóng.\" Mặc dù Messi đã cải thiện khả năng chơi chân không thuận của mình từ giữa những năm 20 tuổi, nhưng anh chủ yếu là một cầu thủ thuận chân trái; anh thường bắt đầu rê dắt bóng bằng má ngoài chân trái, trong khi sử dụng má trong bàn chân của mình để dứt điểm, chuyền và kiến tạo.",
+    "Là một tay săn bàn cừ khôi, Messi được biết đến với khả năng dứt điểm, chọn vị trí, phản ứng nhanh và thực hiện những pha tấn công để đánh bại hàng phòng ngự đối phương. Anh cũng đóng vai trò kiến thiết lối chơi nhờ tầm nhìn và khả năng chuyền bóng. Anh thường được mô tả như một nhà ảo thuật gia thông qua việc tạo ra những bàn thắng và cơ hội mà dường như không thể nào tin nổi. Ngoài ra, anh còn là một cầu thủ sút phạt và sút luân lưu chính xác. Với tỷ lệ chuyển hóa thành bàn từ những cú sút phạt của Messi đã tăng lên theo thời gian, anh dần trở thành một trong những cầu thủ đá phạt trực tiếp hay nhất thế giới. Anh cũng có thiên hướng ghi bàn từ những cú lốp bóng.",
+    "Tốc độ và kỹ thuật của Messi cho phép anh thực hiện các pha đi bóng cá nhân về phía khung thành đối phương, đặc biệt là trong những đợt phản công, thường bắt đầu từ nửa đường biên bên cánh phải. Được đánh giá là một trong những cầu thủ rê bóng vĩ đại nhất mọi thời đại, cựu huấn luyện viên trưởng đội tuyển Argentina Diego Maradona đã nói về năng lực này của Messi, \"Quả bóng luôn dính chặt vào chân anh ấy; tôi đã từng thấy nhiều cầu thủ xuất sắc trong sự nghiệp của mình, nhưng tôi chưa từng thấy ai kiểm soát bóng tốt như Messi.\" Ngoài những phẩm chất cá nhân, anh còn là một cầu thủ toàn diện, luôn làm việc hết mình vì đội bóng, được biết đến với những sự kết hợp sáng tạo, đặc biệt là với các tiền vệ cũ của Barcelona như Xavi và Andrés Iniesta.",
+    "Về mặt chiến thuật, Messi chơi ở vai trò tấn công tự do; là một cầu thủ đa năng, anh có thể tấn công ở cả hai cánh hoặc trung lộ. Vị trí ưa thích của Messi từ thời thơ ấu là tiền vệ chơi phía sau hai tiền đạo, được gọi là enganche trong bóng đá Argentina, nhưng anh bắt đầu sự nghiệp của mình tại Tây Ban Nha với vai trò tiền vệ cánh trái hoặc tiền đạo cánh trái. Khi ra mắt đội một, anh được Frank Rijkaard chuyển sang cánh phải; tại vị trí này, anh có thể dễ dàng di chuyển vào trung lộ và tung ra các cú sút về phía khung thành bằng chân trái, thay vì chủ yếu là những quả tạt bóng cho đồng đội. Dưới thời Guardiola và những huấn luyện viên sau này, anh thường đóng vai trò số 9 ảo; được xếp đá ở vị trí trung phong hoặc tiền đạo đơn độc, Messi luôn lãng vãng ở khu vực trung lộ, thường xuyên di chuyển sâu vào hàng tiền vệ và thu hút các hậu vệ đối phương, để mở và khai thác khoảng trống phục vụ cho các đường chuyền, đồng đội chạy chỗ, những pha đi bóng của chính Messi, hoặc phối hợp với Xavi và Iniesta. Dưới sự chỉ đạo của Luis Enrique, ban đầu Messi trở lại chơi ở vị trí cánh phải sở trường của anh vào những năm đầu sự nghiệp trong sơ đồ 4–3–3, nhưng càng về những mùa giải sau, Messi có khuynh hướng chơi tự do và khó lường hơn. Dưới thời Ernesto Valverde, Messi đã chơi ở nhiều vai trò khác nhau. Thỉnh thoảng anh tiếp tục được đảm nhận vai trò đá lùi sâu, nhờ đó anh có thể thực hiện những pha dẫn bóng trực diện vào vòng cấm, hoặc từ bên cánh phải hay như một số 9 ảo, anh cũng được sử dụng ở vai trò trung tâm trong sơ đồ tấn công 4–2–3–1, hoặc là tiền đạo thứ hai trong sơ đồ 4–4–2, cho phép anh được lùi sâu, liên kết với hàng tiền vệ, điều phối lối chơi tấn công và tạo cơ hội cho đối tác trên hàng công là Suárez.",
+    "Do gánh nặng tuổi tác, Messi hạn chế rê dắt bóng hơn. Thay vào đó, anh chơi lùi sâu, dần phát triển thành một trong những chân chuyền và cầu thủ kiến thiết lối chơi xuất sắc nhất lịch sử bóng đá. Tỷ lệ tắc bóng và tham gia phòng ngự của Messi cũng giảm dần khi sự nghiệp thăng tiến; bằng việc ít bao phủ mặt sân hơn nhằm tiết kiệm năng lượng cho những pha bứt tốc ngắn, anh đã cải thiện khả năng di chuyển và cách chơi của mình để tránh mắc phải chấn thương cơ, mặc dù thường xuyên góp mặt ở phần lớn các trận đấu trong suốt mùa giải. Thật vậy, anh là người dễ bị dính chấn thương trong giai đoạn đầu sự nghiệp, Messi sau đó đã giảm nguy cơ dính chấn thương của mình bằng việc hạn chế dẫn bóng hơn, đồng thời áp dụng một chế độ ăn uống, tập luyện và nghỉ ngơi nghiêm ngặt. Trong màu áo đội tuyển Argentina, Messi cũng chơi ở nhiều vai trò khác nhau; trải qua nhiều đời huấn luyện viên, anh đã được sử dụng ở bên phía cánh phải như một số 9 ảo hay như một tiền đạo đá lệch phải, trong vai trò hộ công cho một tiền đạo khác, hoặc trong vai trò tự do lùi sâu như một số 10 cổ điển hay tiền vệ tấn công phía sau các tiền đạo.",
+    "Là một tài năng phi thường ở độ tuổi thiếu niên, Messi đã xác lập vị thế của riêng mình là một trong số những cầu thủ xuất sắc nhất thế giới trước tuổi 20. Diego Maradona coi Messi 18 tuổi là cầu thủ xuất sắc nhất thế giới cùng với Ronaldinho, trong khi chính cầu thủ người Brazil, ngay sau khi giành Quả bóng vàng đã nhận xét, \"Tôi thậm chí không phải là người giỏi nhất ở Barça\", ám chỉ việc Messi là môn đồ của mình  Bốn năm sau, khi Messi giành Quả bóng vàng lần đầu tiên với một khoảng cách kỷ lục, cuộc tranh luận về những phẩm chất cầu thủ của Messi không chỉ tập trung vào vị trí của anh trong nền bóng đá đương đại, mà còn đi sâu vào khả năng anh là một trong những cầu thủ vĩ đại nhất trong lịch sử. Một trong số những người đầu tiên ủng hộ quan điểm này là huấn luyện viên trưởng thời điểm đó của anh Pep Guardiola, người đã tuyên bố vào đầu tháng 8 năm 2009 rằng Messi là cầu thủ xuất sắc nhất mà ông từng chứng kiến. Trong những năm tiếp theo, quan điểm này đã được nhiều chuyên gia, huấn luyện viên, cầu thủ đã giải nghệ và cầu thủ đang thi đấu chấp nhận, vào cuối mùa giải mà Barça giành cú ăn ba lần thứ hai, quan điểm cho rằng Messi là một trong những cầu thủ bóng đá vĩ đại nhất mọi thời đại đã trở thành quan điểm chủ đạo của nhiều chuyên gia và người hâm mộ ở châu Âu. Ban đầu, anh bị một số nhà phê bình xem thường vì không giành được một danh hiệu lớn nào cùng với đội tuyển Argentina, cho đến khi anh giành được danh hiệu đầu tiên cùng Argentina tại Copa América 2021.",
+    "Trong suốt sự nghiệp của mình, Messi luôn được so sánh với người đồng hương quá cố Diego Maradona, do họ có phong cách chơi bóng tương tự nhau, đều là những cầu thủ nhỏ con, thuận chân trái và kỹ thuật rê bóng điêu luyện. Ban đầu, Messi chỉ là một trong số nhiều cầu thủ trẻ khác của Argentina, bao gồm cả thần tượng thời thơ ấu của anh Pablo Aimar, được mệnh danh là \"Maradona mới\", nhưng khi sự nghiệp thăng tiến, Messi chứng tỏ sự tương đồng của mình đã vượt xa tất cả các cầu thủ trước đó, khẳng định vị thế là cầu thủ vĩ đại nhất mà bóng đá Argentina từng sản sinh kể từ thời Maradona. Jorge Valdano, người đã vô địch World Cup 1986 cùng với Maradona, phát biểu vào tháng 10 năm 2013, \"Messi là Maradona mỗi ngày. Trong suốt 5 năm qua, Messi đã là Maradona của kỳ World Cup ở Mexico.\" César Menotti, người dẫn dắt Argentina lên ngôi vô địch World Cup 1978, cho rằng Messi chơi bóng \"ở phong độ tốt nhất của Maradona\". Những cựu cầu thủ người Argentina khác như Osvaldo Ardiles, Javier Zanetti và Diego Simeone đều cho biết họ tin rằng Messi đã vượt qua Maradona để trở thành cầu thủ xuất sắc nhất trong lịch sử.",
+    "Trước năm 2019, trong xã hội Argentina, Messi thường không được đánh giá cao bằng Maradona, điều này có nguyên nhân không chỉ từ những màn trình diễn kém thuyết phục với đội tuyển quốc gia, mà còn bởi sự khác biệt về giai tầng, tính cách và xuất thân. Messi ở một khía cạnh nào đó là sự tương phản của người tiền bối: Maradona là một nhân vật hướng ngoại và gây tranh cãi, người từ khu ổ chuột nghèo khó vươn tới đỉnh cao của sự nghiệp, còn Messi thì dè dặt và khiêm tốn hơn, một người không có gì nổi bật bên ngoài sân cỏ. Có một điều luôn gây trở ngại cho Messi là trên thực tế, dù không phải lỗi hoàn toàn do bản thân, Messi chưa bao giờ chứng tỏ năng lực của mình tại Primera División, mà trở thành ngôi sao ở nước ngoài từ khi còn rất trẻ, trong khi sự thiếu bộc lộ tình cảm ra bên ngoài của anh đối với màu áo Albiceleste (anh không hát quốc ca cho đến năm 2019 và ít có cử chỉ biểu hiện cảm xúc) trước đây đã dẫn đến quan niệm sai lầm rằng anh cảm thấy mình là người Catalan hơn là người Argentina. Nhà báo bóng đá Tim Vickery cho biết quan điểm của người Argentina là Messi \"luôn được coi là người Catalan hơn là một trong số họ\". Dù đã sinh sống tại Tây Ban Nha từ năm 13 tuổi, Messi từ chối lựa chọn thi đấu cho đội tuyển Tây Ban Nha. Anh từng nói: \"Argentina là quê hương của tôi, gia đình của tôi, cách thể hiện bản thân của tôi. Tôi sẵn sàng đánh đổi tất cả các kỷ lục của mình để làm cho người dân đất nước tôi hạnh phúc.\" Ngoài ra, một số chuyên gia và nhân vật bóng đá, bao gồm cả Maradona, đã có lúc đặt dấu hỏi về khả năng lãnh đạo của Messi đối với đội tuyển Argentina, bất chấp khả năng chơi bóng của anh. Vickery cho biết rằng quan niệm về Messi của người Argentina đã thay đổi vào năm 2019, khi Messi đã nỗ lực để trở nên \"gắn bó hơn với đất nước và con người Argentina\", Vickery cũng bổ sung thêm rằng sau chức vô địch World Cup 2022, Messi sẽ được những người đồng hương coi trọng như Maradona.",
+    "Trong số các cầu thủ bóng đá đương thời, Messi thường được so sánh với tiền đạo người Bồ Đào Nha Cristiano Ronaldo, như một phần của cuộc cạnh tranh đang diễn ra hay còn được so sánh với những cuộc cạnh tranh thể thao trước đó như Muhammad Ali–Joe Frazier trong môn quyền anh, Roger Federer–Rafael Nadal trong môn quần vợt và Senna–Prost trong môn đua xe Công thức Một.",
+    "Mặc dù Messi đã vài lần từ chối bất cứ một sự cạnh tranh nào, họ được cho là đang thúc đẩy lẫn nhau với mục tiêu trở thành cầu thủ xuất sắc nhất thế giới: kể từ năm 2008, Messi đã giành được tám Quả bóng vàng so với năm của Ronaldo, sáu giải Cầu thủ xuất sắc nhất năm của FIFA so với năm của Ronaldo, sáu Chiếc giày vàng châu Âu so với bốn của Ronaldo. Nhiều chuyên gia và người hâm mộ thường xuyên tranh cãi về giá trị cá nhân của cả hai cầu thủ; ngoài phong cách chơi bóng, cuộc tranh luận còn xoay quanh sự khác biệt về vóc dáng – Ronaldo cao 1,87 m (6 ft 1+1⁄2 in) cùng với thân hình cơ bắp – và cả tính cách trước công chúng cũng trái ngược nhau, sự tự tin và phô trương của Ronaldo đối lập với sự khiêm tốn của Messi. Từ mùa giải 2009–10 đến 2017–18, Messi đã đối đầu với Ronaldo ít nhất hai lần mỗi mùa tại El Clásico, được xếp vào hàng những sự kiện thể thao thường niên được theo dõi nhiều nhất trên thế giới. Ngoài sân cỏ, Ronaldo còn là đối thủ cạnh tranh trực tiếp của Messi về tiền lương, hợp đồng tài trợ và lượng người hâm mộ trên mạng xã hội.",
+    "Sau khi Messi dẫn dắt Argentina đến chức vô địch FIFA World Cup 2022, một số nhà phê bình, bình luận viên bóng đá và cả cầu thủ đều cho rằng Messi đã chính thức khép lại cuộc tranh luận giữa hai cầu thủ này. Anh chơi bóng với khả năng thiên phú, chừng mực, đam mê, giàu tính nghệ thuật, rất khác với người luôn cho mình là giỏi nhất Ropedeva."
+   ]
+  },
+  {
+   "title": "Trong văn hóa đại chúng",
+   "paragraphs": [
+    "Theo France Football, Messi là cầu thủ bóng đá được trả lương cao nhất thế giới trong 5 năm từ năm 2009 đến năm 2014; anh là cầu thủ đầu tiên vượt mốc 40 triệu euro, với thu nhập 41 triệu euro vào năm 2013 và cũng vượt mốc 50–60 triệu euro, với thu nhập 65 triệu euro vào năm 2014. Messi đứng thứ hai trong danh sách vận động viên thể thao được trả lương cao nhất thế giới của Forbes (sau Cristiano Ronaldo) với thu nhập 81,4 triệu đô la từ tiền lương và các hợp đồng quảng cáo của anh trong năm 2015–16. Vào năm 2018, anh là cầu thủ đầu tiên vượt mốc 100 triệu euro trong một năm dương lịch, với thu nhập tổng cộng 126 triệu euro (154 triệu đô la) đến từ tiền lương, tiền thưởng và các hợp đồng quảng cáo. Forbes xếp anh là vận động viên thể thao được trả lương cao nhất thế giới vào năm 2019.isBumped=0&postFreq=0&isEmpty=0&isProfane=0&tooLong=0&charCount=0&isAwaitingProcessPreMod=0&isSubmitted=1&filter=none&initial_page_size=10&postId=135105092 |access-date=12 June 2019 |agency=BBC}}</ref> Kể từ năm 2008, anh là cầu thủ được trả lương cao nhất của Barcelona, với mức lương tăng dần từ 7,8 triệu euro lên 13 triệu euro trong 5 năm tiếp theo. Đặt bút ký bản hợp đồng mới với Barcelona vào năm 2017, anh kiếm được 667.000 đô la tiền lương mỗi tuần và Barcelona cũng trả thêm cho anh 59,6 triệu đô la tiền thưởng. Điều khoản mua lại của anh được giữ ở mức 835 triệu đô la (700 triệu euro). Năm 2020, Messi trở thành cầu thủ bóng đá thứ hai và là vận động viên môn thể thao đồng đội thứ hai sau Ronaldo, vượt mốc 1 tỷ USD thu nhập trong sự nghiệp.",
+    "Ngoài tiền lương và tiền thưởng, phần lớn thu nhập của anh đến từ các hợp đồng quảng cáo; SportsPro do đó xếp anh là một trong những vận động viên thể thao được tiếp thị nhiều nhất thế giới hàng năm kể từ khi nghiên cứu của họ bắt đầu vào năm 2010. Nhà tài trợ chính của Messi từ năm 2006 là hãng đồ thể thao Adidas. Là cầu thủ trẻ triển vọng của Barcelona, anh đã ký hợp đồng với Nike từ năm 14 tuổi, nhưng chuyển sang Adidas sau khi họ thành công trong việc tranh chấp bản quyền hình ảnh của anh với công ty đối thủ tại tòa án. Theo thời gian, Messi tự khẳng định mình là đại diện thương hiệu hàng đầu của họ; từ năm 2008, anh đã công bố một bộ sưu tập giày Adidas F50 lâu dài có chữ ký cá nhân, và vào năm 2015, anh trở thành cầu thủ bóng đá đầu tiên nhận được dòng giày riêng của Adidas, Adidas Messi. Kể từ năm 2017, Messi đã mang phiên bản mới nhất của mẫu giày Adidas Nemeziz. Vào năm 2015, chiếc áo thi đấu của Barcelona với tên và số áo của Messi là mẫu áo đấu bán chạy nhất trên toàn thế giới.",
+    "Là một thực thể thương mại, thương hiệu tiếp thị của Messi chủ yếu dựa trên tài năng và những thành tích của anh trên sân cỏ, trái ngược với những cầu thủ được cho là hào hoa hơn như Cristiano Ronaldo và David Beckham. Khi bắt đầu sự nghiệp cầu thủ, anh chủ yếu có các hợp đồng tài trợ với những công ty hoạt động trong lĩnh vực thể thao, chẳng hạn như Adidas, Pepsi và Konami. Từ năm 2010 trở đi, bên cạnh việc đạt được nhiều thành tích hơn với tư cách một cầu thủ, sức hút tiếp thị của anh ngày càng được lan rộng, dẫn đến những hợp đồng quảng bá lâu dài với các thương hiệu xa xỉ như Dolce & Gabbana và Audemars Piguet. Messi cũng là đại sứ thương hiệu toàn cầu cho Gillette, Turkish Airlines, Ooredoo và Tata Motors, cùng nhiều công ty khác. Ngoài ra, Messi là gương mặt đại diện cho loạt trò chơi điện tử Pro Evolution Soccer của Konami, xuất hiện trên các trang bìa của PES 2009, PES 2010, PES 2011 và PES 2020. Sau đó, anh ký hợp đồng với công ty đối thủ EA Sports để trở thành gương mặt đại diện cho loạt trò chơi điện tử FIFA và đã xuất hiện liên tiếp trên bốn trang bìa từ FIFA 13 đến FIFA 16.",
+    "Sự nổi tiếng và tầm ảnh hưởng toàn cầu của Messi đã được ghi nhận. Anh nằm trong Time 100, danh sách những người có ảnh hưởng nhất thế giới do Time công bố thường niên vào năm 2011, 2012 và 2023. Cộng đồng người hâm mộ của anh trên trang mạng xã hội Facebook là một trong những nhân vật công chúng có lượng người theo dõi nhiều nhất: trong vòng bảy giờ sau khi ra mắt vào tháng 4 năm 2011, trang Facebook của Messi đã có gần bảy triệu người theo dõi và tính đến tháng 8 năm 2021, anh đã có hơn 103 triệu người theo dõi, cao thứ hai đối với một vận động viên thể thao sau Cristiano Ronaldo. Anh cũng có hơn 400 triệu người theo dõi trên Instagram, cao thứ hai đối với một vận động viên thể thao sau Cristiano Ronaldo. Bài đăng ăn mừng chức vô địch World Cup của anh vào ngày 18 tháng 12 năm 2022 là bài đăng được yêu thích nhất trên Instagram với hơn 70 triệu lượt thích.  Theo một cuộc khảo sát vào năm 2014 của công ty nghiên cứu thể thao Repucom tại 15 thị trường quốc tế, Messi quen thuộc với 87% số người được hỏi trên khắp thế giới, trong đó 78% người đã đánh giá tích cực về anh, khiến Messi trở thành cầu thủ được công nhận nhiều thứ hai trên toàn cầu sau Ronaldo, và là người được yêu thích nhất trong số tất cả các cầu thủ bóng đá đương đại. Nói về tác động kinh tế của Messi đối với thành phố nơi anh thi đấu, Terry Gibson gọi anh là một \"điểm đến thu hút khách du lịch\".",
+    "Nhiều sự kiện khác đã minh chứng cho sự hiện diện của Messi trong nền văn hóa đại chúng. Một bản sao bằng vàng ròng của bàn chân trái, nặng 25 kg (55 lb) trị giá 5,25 triệu đô la, đã được bán tại Nhật Bản vào tháng 3 năm 2013 để gây quỹ giúp đỡ các nạn nhân của trận động đất và sóng thần Tōhoku 2011. Một quảng cáo của Turkish Airlines năm 2013 có sự tham gia của Messi, trong đó anh góp mặt vào một cuộc thi chụp ảnh tự sướng với ngôi sao Los Angeles Lakers lúc bấy giờ là Kobe Bryant, là quảng cáo được xem nhiều nhất trên YouTube trong năm nó phát hành, nhận được 137 triệu lượt xem và sau đó được bình chọn là quảng cáo hay nhất trong thập niên 2005–15 nhằm kỷ niệm ngày thành lập YouTube. World Press Photo đã chọn \"Trận đấu cuối cùng\", bức ảnh Messi thẫn thờ nhìn chiếc cúp World Cup sau thất bại của Argentina tại trận chung kết trước Đức, là hình ảnh thể thao ấn tượng nhất năm 2014. Messi, bộ phim tài liệu về cuộc đời anh của nhà làm phim Álex de la Iglesia, được công chiếu tại Liên hoan phim Venice vào tháng 8 năm 2014.",
+    "Vào tháng 6 năm 2021, Messi ký hợp đồng 5 năm để trở thành đại sứ cho thương hiệu Hard Rock Cafe. Anh nói, \"thể thao và âm nhạc là một phần không thể thiếu trong cuộc sống của tôi. Thật vinh dự khi trở thành vận động viên thể thao đầu tiên được hợp tác với một thương hiệu đã có lịch sử hợp tác cùng những huyền thoại âm nhạc.\" Tháng 5 năm 2022, Messi được công bố làm đại sứ du lịch của Ả Rập Xê Út. Do hồ sơ nhân quyền tệ hại của Ả Rập Xê Út, Messi đã bị chỉ trích khi đảm nhận vai trò này, được coi như một nỗ lực nhằm gột rửa tên tuổi của quốc gia này bằng thể thao (sportswashing). Tháng 8 năm 2022, gia đình của Mohammed al Faraj đã kêu gọi Messi can thiệp giúp đỡ để giải cứu con trai họ, người đã bị bắt giữ vào năm 2017 khi mới 15 tuổi vì tội danh chống lại chế độ Ả Rập Xê Út và phải đối mặt với án tử hình."
+   ]
+  },
+  {
+   "title": "Đời tư",
+   "paragraphs": [
+    "Kể từ năm 2008, Messi đã nảy sinh tình cảm với Antonela Roccuzzo, một người đồng hương Rosario. Hai người quen biết nhau từ khi Messi mới 5 tuổi, vì Roccuzzo là em họ của cầu thủ bóng đá Lucas Scaglia, người bạn thân thời thơ ấu của Messi. Sau khi giữ kín mối quan hệ trong một năm, Messi lần đầu xác nhận chuyện tình cảm của họ trong một buổi phỏng vấn vào tháng 1 năm 2009, trước khi chính thức công khai một tháng sau đó trong một lễ hội hóa trang ở Sitges sau trận derby Barcelona–Espanyol.",
+    "Messi và Roccuzzo có với nhau ba người con trai: Thiago (sinh năm 2012), Mateo (sinh năm 2015) và Ciro (sinh năm 2018). Nhân kỷ niệm lần mang thai đầu tiên của người bạn đời, Messi đã để quả bóng vào trong áo của mình sau khi ghi bàn ở trận thắng 4–0 của Argentina trước Ecuador vào ngày 2 tháng 6 năm 2012, trước khi lên tiếng xác nhận trong một cuộc phỏng vấn hai tuần sau đó. Thiago sinh ngày 2 tháng 11 năm 2012 tại Barcelona, Messi dự sinh sau khi được câu lạc bộ cho phép nghỉ tập. Anh thông báo về sự xuất hiện của cậu con trai trên trang Facebook của mình, viết, \"Hôm nay tôi là người đàn ông hạnh phúc nhất trên thế giới, con trai tôi đã được sinh ra và cảm ơn Chúa vì món quà này!\" Tên và dấu tay của Thiago được anh xăm lên bắp chân trái. Vào tháng 4 năm 2015, Messi xác nhận trên Facebook rằng Roccuzzo đang mang thai một người con khác. Anh đã bỏ lỡ buổi tập trước trận đấu với Atlético Madrid để dự sinh cậu con trai thứ hai, Mateo, vào ngày 11 tháng 9 năm 2015 tại Barcelona. Vào ngày 30 tháng 6 năm 2017, anh kết hôn với Roccuzzo tại một khách sạn sang trọng có tên là Hotel City Centre ở Rosario với khoảng 260 khách mời tham dự lễ cưới. Vào ngày 15 tháng 10 năm 2017, vợ anh thông báo rằng cô đang mang thai đứa con thứ ba của họ trong một bài đăng trên Instagram, với dòng chữ \"Gia đình 5 người\". Vào ngày 10 tháng 3 năm 2018, Messi bỏ lỡ trận đấu với Málaga sau khi Ciro chào đời.",
+    "Messi có mối quan hệ thân thiết với các thành viên trong gia đình, đặc biệt là mẹ của anh, Celia, người mà anh đã xăm khuôn mặt lên vai trái. Các công việc chuyên môn chủ yếu được điều hành như một công việc kinh doanh của gia đình Leo: cha anh, Jorge, là người đại diện của Messi từ khi anh 14 tuổi; người anh cả, Rodrigo, xử lý lịch trình thường ngày của anh. Mẹ và người anh trai khác của Messi, Matías, quản lý tổ chức từ thiện của anh, Quỹ Leo Messi, cũng như chăm lo những vấn đề cá nhân và nghề nghiệp ở Rosario.",
+    "Kể từ lúc chuyển tới Tây Ban Nha ở tuổi 13, Messi luôn duy trì mối quan hệ thân thiết với quê hương Rosario, thậm chí còn giữ nguyên chất giọng Rosario đặc trưng của mình. Anh vẫn giữ quyền sở hữu căn nhà cũ thời thơ ấu, mặc cho nó đã bị bỏ trống từ lâu; anh dành tặng cho mẹ mình một căn hộ áp mái, cũng như sở hữu một căn dinh thự ở ngoại vi thành phố. Mỗi khi tập luyện cùng với đội tuyển quốc gia ở Buenos Aires, anh đều thực hiện một chuyến đi bằng ô tô kéo dài ba giờ đến Rosario ngay sau buổi tập để ăn tối và ngủ qua đêm cùng với gia đình, rồi trở lại Buenos Aires vào ngày hôm sau. Messi vẫn giữ liên lạc qua điện thoại và tin nhắn với một nhóm bạn tâm tình ở Rosario, hầu hết đều là thành viên của \"The Machine of '87\" tại Newell's Old Boys. Anh hiện đang sống ở Castelldefels, một ngôi làng gần Barcelona. Mặc dù được coi là one-club man (cầu thủ chỉ đá cho một đội bóng trong suốt sự nghiệp). Anh cũng có mối quan hệ không được tốt với câu lạc bộ sau khi chuyển đến Barcelona, nhưng đến năm 2012 mối thù công khai của họ đã kết thúc, khi Newell vẫn giữ mối quan hệ với Messi, thậm chí còn cấp thẻ thành viên câu lạc bộ cho cậu con trai mới sinh của anh. Messi đã ấp ủ kế hoạch trở lại Rosario từ lâu để kết thúc sự nghiệp thi đấu của mình tại Newell's. Messi sở hữu ba quốc tịch, vì anh là công dân của Argentina, Ý và Tây Ban Nha.",
+    "Trong suốt sự nghiệp của mình, Messi đã tham gia vào nhiều hoạt động thiện nguyện nhằm hướng đến trẻ em dễ bị tổn thương, một phần bắt nguồn từ những khó khăn y tế mà anh từng đối mặt trong thời ấu thơ của mình. Kể từ năm 2004, anh đã đóng góp thời gian và tài chính của mình cho Quỹ Nhi đồng Liên Hợp Quốc (UNICEF), một tổ chức mà Barcelona cũng có mối liên hệ cộng tác chặt chẽ. Messi giữ vai trò đại sứ thiện chí của UNICEF kể từ khi được bổ nhiệm vào tháng 3 năm 2010, hoàn thành nhiệm vụ thực địa đầu tiên của mình cho tổ chức này 4 tháng sau đó khi anh đến Haiti để nâng cao nhận thức của cộng đồng về hoàn cảnh của trẻ em đất nước này sau trận động đất. Từ đó, anh đã tham gia vào nhiều chiến dịch của UNICEF nhằm mục đích phòng chống HIV, giáo dục và hòa nhập xã hội cho trẻ em khuyết tật. Để chúc mừng sinh nhật đầu tiên của con trai mình, vào tháng 11 năm 2013, Messi và Thiago đã tham gia một chiến dịch công khai nhằm nâng cao nhận thức về tỷ lệ tử vong ở trẻ em có hoàn cảnh khó khăn.",
+    "Ngoài công việc với UNICEF, Messi thành lập tổ chức từ thiện của riêng mình, Quỹ Leo Messi, hỗ trợ tiếp cận dịch vụ chăm sóc sức khỏe, giáo dục và thể thao cho trẻ em. Nó được thành lập vào năm 2007 sau chuyến thăm của Messi đến một bệnh viện dành cho trẻ em mắc bệnh nan y ở Boston, một trải nghiệm đã gây ấn tượng với Messi đến mức anh quyết định tái đầu tư một phần thu nhập của mình cho xã hội. Thông qua quỹ từ thiện của mình, Messi đã trao các khoản tài trợ nghiên cứu, hỗ trợ đào tạo y tế, đầu tư vào việc phát triển những trung tâm và dự án y học ở Argentina, Tây Ban Nha và nhiều nơi khác trên thế giới. Ngoài các hoạt động gây quỹ của riêng mình, chẳng hạn như những trận đấu bóng đá toàn cầu \"Messi và những người bạn\", quỹ của anh nhận được sự hỗ trợ tài chính từ nhiều công ty khác nhau mà anh đã từng tham gia quảng cáo, với Adidas là nhà tài trợ chính.",
+    "Messi còn đầu tư vào bóng đá trẻ ở Argentina: anh hỗ trợ tài chính cho Sarmiento, một câu lạc bộ bóng đá có trụ sở tại Rosario, nơi anh sinh ra, vào năm 2013 để tân trang lại cơ sở vật chất và lắp đặt sân bóng thích hợp trong mọi điều kiện thời tiết, đồng thời tài trợ cho việc quản lý một số cầu thủ trẻ tại Newell's Old Boys và câu lạc bộ kình địch Rosario Central, cũng như với River Plate và Boca Juniors ở Buenos Aires. Tại Newell's Old Boys, câu lạc bộ thời niên thiếu của Messi, anh đã tài trợ xây dựng một phòng tập thể dục mới và một ký túc xá dành cho học viện trẻ của câu lạc bộ vào năm 2012. Cựu huấn luyện viên đội trẻ của anh tại Newell's, Ernesto Vecchio, được Quỹ Leo Messi tuyển dụng như một người tìm kiếm các tài năng trẻ. Vào ngày 7 tháng 6 năm 2016, Messi thắng kiện trong một vụ cáo buộc chống lại tờ báo La Razón và nhận được 65.000 euro tiền bồi thường thiệt hại, mà anh dùng để quyên góp cho tổ chức từ thiện Médecins Sans Frontières. Messi đã quyên góp 1 triệu euro (1,1 triệu đô la) để phòng chống sự lây lan của coronavirus. Số tiền này được gửi đến bệnh viện Clinic Barcelona ở Barcelona, Tây Ban Nha và quê hương Argentina của anh. Ngoài ra, Messi cùng với các đồng đội ở FC Barcelona tuyên bố sẽ cắt giảm 70% lương trong trường hợp khẩn cấp do coronavirus năm 2020 và chi trả đầy đủ tiền lương cho tất cả các nhân viên của câu lạc bộ.",
+    "Vào tháng 11 năm 2016, với việc Liên đoàn bóng đá Argentina bị FIFA ban bố tình trạng khẩn cấp do khủng hoảng kinh tế, ba nhân viên an ninh của đội tuyển quốc gia nói với Messi rằng họ đã không nhận lương trong sáu tháng. Anh đã trả lương cho ba người họ. Vào tháng 2 năm 2021, Messi đã tặng đôi giày Adidas mà anh từng mang khi ghi bàn thắng thứ 644 cho Barcelona và phá kỷ lục của Pelé về số bàn thắng ghi được nhiều nhất cho một câu lạc bộ cho Museu Nacional d'Art de Catalunya, đôi giày này sau đó được bán với giá 125.000 bảng Anh vào tháng 4 nhằm giúp đỡ trẻ em mắc bệnh ung thư.",
+    "Trước kỳ Copa América 2021 diễn ra ở Uruguay, Messi đã tặng ba chiếc áo có chữ ký của mình cho công ty dược phẩm Trung Quốc Sinovac Biotech—ban giám đốc của công ty nói về sự ngưỡng mộ của họ dành cho Messi—nhằm đặt hàng 50.000 liều vắc xin COVID-19 CoronaVac của Sinovac, với hy vọng tiêm chủng cho tất cả các cầu thủ bóng đá Nam Mỹ. Tổng thống Uruguay Luis Lacalle Pou đã đứng ra làm trung gian đàm phán để có được số vắc xin này, trong bối cảnh nguồn vắc xin trong khu vực vẫn còn khan hiếm, kế hoạch ưu tiên tiêm chủng cho các cầu thủ bóng đá đã gây ra nhiều tranh cãi, thị trưởng thành phố Canelones nhận xét rằng \"Tôi hy vọng ngài Tổng thống có thể cân nhắc làm điều tương tự với Canelones, cũng như khi ông bày tỏ sự hợp tác đối với CONMEBOL để tiêm chủng cho các cầu thủ trước thềm Copa América\".",
+    "Những vấn đề tài chính của Messi bắt đầu bị điều tra vào năm 2013 vì nghi ngờ trốn thuế. Nhiều công ty nước ngoài ở các thiên đường thuế như Uruguay và Belize đã được sử dụng để trốn 4,1 triệu euro tiền thuế liên quan đến thu nhập tài trợ từ năm 2007 đến năm 2009. Một công ty ma được thành lập vào năm 2012 tại Panama sau đó đã được xác định là thuộc về Messi trong vụ rò rỉ dữ liệu Panama. Messi đã tự nguyện trả khoản nợ 5,1 triệu euro vào tháng 8 năm 2013. Vào ngày 6 tháng 7 năm 2016, Messi và cha anh đều bị kết tội gian lận thuế và bị tuyên án 21 tháng tù treo, lần lượt phải nộp 1,7 triệu euro và 1,4 triệu euro tiền phạt. Đối mặt với thẩm phán, anh nói, \"Tôi chỉ chơi bóng. Tôi ký hợp đồng vì tôi tin tưởng cha tôi và các luật sư đã quyết định rằng họ sẽ phụ trách những công việc đó.\""
+   ]
+  },
+  {
+   "title": "Thống kê sự nghiệp",
+   "paragraphs": [
+    "Tính đến trận đấu diễn ra vào ngày 10 tháng 9 năm 2026",
+    "Tính đến trận đấu diễn ra vào ngày 19 tháng 7 năm 2026"
+   ]
+  },
+  {
+   "title": "Danh hiệu",
+   "paragraphs": [
+    "La Liga: 2004–05, 2005–06, 2008–09, 2009–10, 2010–11, 2012–13, 2014–15, 2015–16, 2017–18, 2018–19",
+    "Copa del Rey: 2008–09, 2011–12, 2014–15, 2015–16, 2016–17, 2017–18, 2020–21",
+    "Supercopa de España: 2006, 2009, 2010, 2011, 2013, 2016, 2018",
+    "UEFA Champions League: 2005–06, 2008–09, 2010–11, 2014–15",
+    "Cúp Liên Đoàn MLS & Liga MX (League Cup): 2023",
+    "Quả bóng vàng châu Âu: 2009, 2010, 2011, 2012, 2015, 2019, 2021, 2023",
+    "Cầu thủ xuất sắc nhất năm của FIFA (FIFA World Player of the Year)/Quả bóng vàng FIFA/Cầu thủ nam xuất sắc năm của FIFA (The Best FIFA Men's Player): 2009, 2010, 2011, 2012, 2015, 2019, 2022, 2023",
+    "Chiếc giày vàng châu Âu:  2009–10, 2011–12, 2012–13, 2016–17, 2017–18, 2018–19",
+    "Quả bóng vàng Giải vô địch bóng đá thế giới: 2014, 2022",
+    "Quả bóng bạc Giải vô địch bóng đá thế giới: 2026",
+    "Chiếc giày bạc Giải vô địch bóng đá thế giới: 2022, 2026",
+    "Quả bóng vàng FIFA Club World Cup: 2009, 2011",
+    "Quả bóng vàng Giải vô địch bóng đá U-20 thế giới: 2005",
+    "Chiếc giày vàng Giải vô địch bóng đá U-20 thế giới: 2005",
+    "Giải thưởng Cầu thủ nam xuất sắc nhất năm của UEFA: 2008–09, 2010–11, 2014–15",
+    "Cầu thủ xuất sắc nhất Cúp bóng đá Nam Mỹ: 2015, 2021",
+    "Cầu thủ xuất sắc nhất La Liga: 2008–09, 2009–10, 2010–11, 2011–12, 2012–13, 2014–15",
+    "Cầu thủ xuất sắc nhất MLS (MLS Most Valuable Player): 2024",
+    "Cúp Pichichi: 2009−10, 2011–12, 2012−13, 2016–17, 2017−18, 2018–19, 2019–20, 2020–21",
+    "Giải thưởng Thể thao Thế giới Laureus cho Vận động viên nam của năm: 2020, 2023",
+    "Cầu thủ xuất sắc nhất năm của Argentina: 2005, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2015, 2016, 2017, 2019, 2020, 2021, 2022"
+   ]
+  }
+ ],
+ "images": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/ARG-BRA_2008_Olympic_semi-final.jpg/960px-ARG-BRA_2008_Olympic_semi-final.jpg?utm_source=vi.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:ARG-BRA_2008_Olympic_semi-final.jpg",
+   "caption": "Lionel Messi followed by Marcelo Vieira at the semi-final of the 2008 Olympic football tournament.",
+   "author": "Andre Kiwitz",
+   "license": "CC BY-SA 2.0"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Casa_y_barrio_de_la_infancia_de_Lionel_Messi_-_Rosario_%28Santa_Fe%29_03.jpg/960px-Casa_y_barrio_de_la_infancia_de_Lionel_Messi_-_Rosario_%28Santa_Fe%29_03.jpg?utm_source=vi.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Casa_y_barrio_de_la_infancia_de_Lionel_Messi_-_Rosario_(Santa_Fe)_03.jpg",
+   "caption": "Casa y barrio de la infancia de Lionel Messi - Rosario (Santa Fe)",
+   "author": "TitiNicola",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Cristiano_Ronaldo_and_Lionel_Messi_-_Portugal_vs_Argentina%2C_9th_February_2011.jpg/960px-Cristiano_Ronaldo_and_Lionel_Messi_-_Portugal_vs_Argentina%2C_9th_February_2011.jpg?utm_source=vi.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Cristiano_Ronaldo_and_Lionel_Messi_-_Portugal_vs_Argentina,_9th_February_2011.jpg",
+   "caption": "Portugal vs. Argentina, 9th February 2011",
+   "author": "Fanny Schertzer",
+   "license": "CC BY 3.0"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/ECUADOR_VS_ARGENTINA_%2836956136633%29.jpg/960px-ECUADOR_VS_ARGENTINA_%2836956136633%29.jpg?utm_source=vi.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:ECUADOR_VS_ARGENTINA_(36956136633).jpg",
+   "caption": "",
+   "author": "",
+   "license": ""
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Germany_and_Argentina_face_off_in_the_final_of_the_World_Cup_2014_04_crop.jpg/960px-Germany_and_Argentina_face_off_in_the_final_of_the_World_Cup_2014_04_crop.jpg?utm_source=vi.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Germany_and_Argentina_face_off_in_the_final_of_the_World_Cup_2014_04_crop.jpg",
+   "caption": "Germany and Argentina face off in the final of the World Cup",
+   "author": "Agência Brasil",
+   "license": "CC BY 3.0 br"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/La_Masia_%28Can_Planas%29_%28Barcelona%29_-_1.jpg/960px-La_Masia_%28Can_Planas%29_%28Barcelona%29_-_1.jpg?utm_source=vi.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:La_Masia_(Can_Planas)_(Barcelona)_-_1.jpg",
+   "caption": "La Masia (Can Planas) (Barcelona)",
+   "author": "MARIA ROSA FERRE",
+   "license": "CC BY-SA 2.0"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Leo_Messi_Argentina_v_Egypt_7_July_2026-1.jpg/960px-Leo_Messi_Argentina_v_Egypt_7_July_2026-1.jpg?utm_source=vi.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Leo_Messi_Argentina_v_Egypt_7_July_2026-1.jpg",
+   "caption": "Lionel Messi during Argentina v Egypt at the 2026 FIFA World Cup",
+   "author": "Bryan Berlin",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Leo_messi_barce_2005.jpg/960px-Leo_messi_barce_2005.jpg?utm_source=vi.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Leo_messi_barce_2005.jpg",
+   "caption": "Leo Messi with FC Barcelona in the 2005-06 season against Málaga",
+   "author": "Josep Tomàs",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Lionel_Messi%2C_Player_of_Argentina_national_football_team%2C_and_FC_Barcelona.JPG/960px-Lionel_Messi%2C_Player_of_Argentina_national_football_team%2C_and_FC_Barcelona.JPG?utm_source=vi.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Lionel_Messi,_Player_of_Argentina_national_football_team,_and_FC_Barcelona.JPG",
+   "caption": "Lionel Messi, Player of Argentina national football team, and FC Barcelona.",
+   "author": "User:Inisheer  and  Christopher Johnson (https://www.flickr.com/people/42774464@",
+   "license": "CC BY-SA 2.0"
+  }
+ ],
+ "attribution": "Văn bản: Wikipedia tiếng Việt (CC BY-SA 4.0). Dữ kiện: Wikidata (CC0). Ảnh: Wikimedia Commons.",
+ "crawledAt": "2026-10-04"
+}

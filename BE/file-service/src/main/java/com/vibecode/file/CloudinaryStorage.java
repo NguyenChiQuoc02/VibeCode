@@ -2,12 +2,17 @@ package com.vibecode.file;
 
 import com.cloudinary.Cloudinary;
 import com.cloudinary.utils.ObjectUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
+import java.net.ConnectException;
+import java.net.SocketTimeoutException;
+import java.net.UnknownHostException;
 import java.util.LinkedHashMap;
 import java.util.Locale;
 import java.util.Map;
@@ -19,6 +24,8 @@ import java.util.UUID;
 public class CloudinaryStorage {
 
     private static final long MB = 1024L * 1024L;
+    private static final int MAX_ATTEMPTS = 4;
+    private static final Logger log = LoggerFactory.getLogger(CloudinaryStorage.class);
 
     private enum Kind {
         IMAGE("image", 10 * MB, Set.of("png", "jpg", "jpeg", "webp", "gif")),
@@ -83,13 +90,22 @@ public class CloudinaryStorage {
                 "public_id", kind == Kind.RAW ? id + "." + ext : id,
                 "overwrite", false);
 
-        Map<?, ?> result;
-        try {
-            result = client().uploader().upload(file.getBytes(), options);
-        } catch (UploadException e) {
-            throw e;
-        } catch (RuntimeException | IOException e) {
-            throw new UploadException(HttpStatus.BAD_GATEWAY, "Không tải được file lên Cloudinary: " + e.getMessage());
+        byte[] bytes = file.getBytes();
+        Map<?, ?> result = null;
+        for (int attempt = 1; result == null; attempt++) {
+            try {
+                result = client().uploader().upload(bytes, options);
+            } catch (UploadException e) {
+                throw e;
+            } catch (RuntimeException | IOException e) {
+                log.warn("Tải file lên Cloudinary lỗi (lần {}/{})", attempt, MAX_ATTEMPTS, e);
+                // DNS/kết nối chập chờn xảy ra trước khi gửi file nên thử lại là an toàn.
+                if (attempt < MAX_ATTEMPTS && isTransientNetworkError(e)) {
+                    pause(attempt * 500L);
+                    continue;
+                }
+                throw new UploadException(HttpStatus.BAD_GATEWAY, "Không tải được file lên Cloudinary: " + e.getMessage());
+            }
         }
 
         Map<String, Object> out = new LinkedHashMap<>();
@@ -100,5 +116,20 @@ public class CloudinaryStorage {
         out.put("bytes", result.get("bytes"));
         out.put("originalName", original);
         return out;
+    }
+
+    private static boolean isTransientNetworkError(Throwable e) {
+        for (Throwable t = e; t != null; t = t.getCause()) {
+            if (t instanceof UnknownHostException || t instanceof ConnectException || t instanceof SocketTimeoutException) return true;
+        }
+        return false;
+    }
+
+    private static void pause(long millis) {
+        try {
+            Thread.sleep(millis);
+        } catch (InterruptedException ie) {
+            Thread.currentThread().interrupt();
+        }
     }
 }

@@ -1,6 +1,7 @@
 package com.vibecode.business.controller;
 
 import com.vibecode.business.exception.ApiException;
+import com.vibecode.business.security.JwtAuth;
 import com.vibecode.business.model.Landmark;
 import com.vibecode.business.model.PageResult;
 import com.vibecode.business.repository.LandmarkRepository;
@@ -17,6 +18,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseStatus;
@@ -33,8 +35,10 @@ public class LandmarkController {
 
     private final LandmarkRepository repo;
     private final MongoTemplate mongo;
+    private final JwtAuth auth;
 
-    public LandmarkController(LandmarkRepository repo, MongoTemplate mongo) {
+    public LandmarkController(LandmarkRepository repo, MongoTemplate mongo, JwtAuth auth) {
+        this.auth = auth;
         this.repo = repo;
         this.mongo = mongo;
     }
@@ -46,6 +50,7 @@ public class LandmarkController {
                                      @RequestParam(required = false) String status,
                                      @RequestParam(required = false) String category,
                                      @RequestParam(required = false) String level,
+                                     @RequestParam(required = false) Boolean hasImage,
                                      @RequestParam(defaultValue = "0") int page,
                                      @RequestParam(defaultValue = "10") int size) {
         int safeSize = Math.min(Math.max(size, 1), 100);
@@ -57,10 +62,11 @@ public class LandmarkController {
         if (status != null && !status.isBlank()) all.add(Criteria.where("status").is(status));
         if (category != null && !category.isBlank()) all.add(Criteria.where("category").is(category));
         if (level != null && !level.isBlank()) all.add(Criteria.where("recognitionLevel").is(level));
+        if (Boolean.TRUE.equals(hasImage)) all.add(Criteria.where("url_image").nin(null, ""));
         Query filter = all.isEmpty() ? new Query() : new Query(new Criteria().andOperator(all));
 
         long total = mongo.count(filter, Landmark.class);
-        Query pageQuery = Query.of(filter).with(PageRequest.of(safePage, safeSize, Sort.by("name")));
+        Query pageQuery = Query.of(filter).with(PageRequest.of(safePage, safeSize, Sort.by(Sort.Direction.DESC, "id")));
         pageQuery.fields().exclude("detail", "images", "highlights");
         return new PageResult<>(mongo.find(pageQuery, Landmark.class), total, safePage, safeSize);
     }
@@ -75,11 +81,11 @@ public class LandmarkController {
                 "deleted", count("DELETED"));
     }
 
-    /** Dữ liệu tối giản để vẽ marker trên bản đồ (bỏ các bản ghi đã xóa). */
+    /** Dữ liệu tối giản để vẽ marker trên bản đồ (bỏ các bản ghi đã xóa hoặc chưa có tọa độ). */
     @GetMapping("/markers")
     public List<Landmark> markers() {
-        Query query = new Query(Criteria.where("status").ne("DELETED"));
-        query.fields().include("name", "category", "address", "latitude", "longitude");
+        Query query = new Query(Criteria.where("status").ne("DELETED").and("latitude").ne(null).and("longitude").ne(null));
+        query.fields().include("name", "category", "provinceCode", "address", "latitude", "longitude");
         return mongo.find(query, Landmark.class);
     }
 
@@ -90,19 +96,22 @@ public class LandmarkController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public Landmark create(@Valid @RequestBody Landmark body) {
+    public Landmark create(@RequestHeader(value = "Authorization", required = false) String token, @Valid @RequestBody Landmark body) {
+        auth.requireAdmin(token);
         return repo.save(body.withId(null));
     }
 
     @PutMapping("/{id}")
-    public Landmark update(@PathVariable String id, @Valid @RequestBody Landmark body) {
+    public Landmark update(@RequestHeader(value = "Authorization", required = false) String token, @PathVariable String id, @Valid @RequestBody Landmark body) {
+        auth.requireAdmin(token);
         if (!repo.existsById(id)) throw notFound();
         return repo.save(body.withId(id));
     }
 
     @DeleteMapping("/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void delete(@PathVariable String id) {
+    public void delete(@RequestHeader(value = "Authorization", required = false) String token, @PathVariable String id) {
+        auth.requireAdmin(token);
         if (!repo.existsById(id)) throw notFound();
         repo.deleteById(id);
     }

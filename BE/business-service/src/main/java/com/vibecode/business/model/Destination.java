@@ -1,7 +1,5 @@
 package com.vibecode.business.model;
 
-import jakarta.validation.constraints.DecimalMax;
-import jakarta.validation.constraints.DecimalMin;
 import jakarta.validation.constraints.NotBlank;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -15,8 +13,8 @@ public record Destination(
         @NotBlank(message = "Loại hình không được để trống") String type,
         int provinceCode,
         String address,
-        @DecimalMin(value = "-90", message = "Vĩ độ không hợp lệ") @DecimalMax(value = "90", message = "Vĩ độ không hợp lệ") double latitude,
-        @DecimalMin(value = "-180", message = "Kinh độ không hợp lệ") @DecimalMax(value = "180", message = "Kinh độ không hợp lệ") double longitude,
+        Double latitude,
+        Double longitude,
         String bestSeason,
         String description,
         @Field("url_image") String urlImage,

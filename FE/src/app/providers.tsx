@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v14-appRouter";
 import { CssBaseline, ThemeProvider, createTheme } from "@mui/material";
 import { AuthProvider } from "@/context/AuthContext";
+import { ToastProvider } from "@/context/ToastContext";
 
 const theme = createTheme({
   palette: {
@@ -51,6 +52,8 @@ const theme = createTheme({
         },
       },
     },
+    // Dấu * của trường bắt buộc luôn màu đỏ ở mọi form.
+    MuiFormLabel: { styleOverrides: { asterisk: { color: "#FF5630" } } },
     MuiPaper: { styleOverrides: { root: { backgroundImage: "none" } } },
     MuiButton: { styleOverrides: { root: { borderRadius: 8 } } },
     MuiTableCell: {
@@ -63,13 +66,15 @@ const theme = createTheme({
 });
 
 export default function Providers({ children }: { children: ReactNode }) {
-  const [queryClient] = useState(() => new QueryClient({ defaultOptions: { queries: { refetchOnWindowFocus: false } } }));
+  const [queryClient] = useState(() => new QueryClient({ defaultOptions: { queries: { refetchOnWindowFocus: false, staleTime: 30_000 } } }));
   return (
     <AppRouterCacheProvider>
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <QueryClientProvider client={queryClient}>
-          <AuthProvider>{children}</AuthProvider>
+          <ToastProvider>
+            <AuthProvider>{children}</AuthProvider>
+          </ToastProvider>
         </QueryClientProvider>
       </ThemeProvider>
     </AppRouterCacheProvider>

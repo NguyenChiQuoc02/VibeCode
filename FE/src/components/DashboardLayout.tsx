@@ -8,6 +8,7 @@ import {
   Badge,
   Box,
   CircularProgress,
+  Collapse,
   Divider,
   Drawer,
   IconButton,
@@ -27,11 +28,62 @@ import {
 import MenuIcon from "@mui/icons-material/Menu";
 import SearchIcon from "@mui/icons-material/Search";
 import NotificationsIcon from "@mui/icons-material/NotificationsNone";
-import MoreVertIcon from "@mui/icons-material/MoreVert";
 import LogoutIcon from "@mui/icons-material/Logout";
+import PersonIcon from "@mui/icons-material/PersonOutline";
+import ExpandLessIcon from "@mui/icons-material/ExpandLess";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { useAuth } from "@/context/AuthContext";
-import { findNav, NAV } from "@/lib/navigation";
+import { findNav, NavItem } from "@/lib/navigation";
+import { useMenus } from "@/lib/useMenus";
 import VietnamIllustration from "@/components/VietnamIllustration";
+
+const isActive = (pathname: string, href: string) => pathname === href || (href !== "/dashboard" && pathname.startsWith(`${href}/`));
+
+const itemSx = {
+  borderRadius: 1.5,
+  mb: 0.5,
+  minHeight: 42,
+  color: "text.secondary",
+  "&.Mui-selected": { bgcolor: "rgba(0,167,111,0.1)", color: "primary.dark" },
+  "&.Mui-selected:hover": { bgcolor: "rgba(0,167,111,0.16)" },
+};
+
+/** Một trang trong sidebar. depth = 1 là menu con trong nhóm (thụt vào). */
+function NavLeaf({ n, depth, pathname, onNavigate }: { n: NavItem; depth: number; pathname: string; onNavigate: () => void }) {
+  return (
+    <ListItemButton component={NextLink} href={n.href} selected={isActive(pathname, n.href)} onClick={onNavigate} sx={{ ...itemSx, pl: depth > 0 ? 3.5 : 2, minHeight: depth > 0 ? 38 : 42 }}>
+      <ListItemIcon sx={{ minWidth: depth > 0 ? 34 : 38, color: "inherit", "& svg": { fontSize: depth > 0 ? 18 : 20 } }}>{n.icon}</ListItemIcon>
+      <ListItemText primary={n.label} primaryTypographyProps={{ variant: "body2", fontWeight: depth > 0 ? 500 : 600 }} />
+    </ListItemButton>
+  );
+}
+
+/** Nhóm menu: bấm để mở/đóng danh sách menu con; tự mở khi đang ở một trang con. */
+function NavGroup({ n, pathname, onNavigate }: { n: NavItem; pathname: string; onNavigate: () => void }) {
+  const children = n.children ?? [];
+  const active = children.some((c) => isActive(pathname, c.href));
+  const [open, setOpen] = useState(active);
+  useEffect(() => {
+    if (active) setOpen(true);
+  }, [active]);
+
+  return (
+    <>
+      <ListItemButton onClick={() => setOpen((o) => !o)} sx={{ ...itemSx, color: active ? "primary.dark" : "text.secondary" }}>
+        <ListItemIcon sx={{ minWidth: 38, color: "inherit", "& svg": { fontSize: 20 } }}>{n.icon}</ListItemIcon>
+        <ListItemText primary={n.label} primaryTypographyProps={{ variant: "body2", fontWeight: 600 }} />
+        {open ? <ExpandLessIcon fontSize="small" /> : <ExpandMoreIcon fontSize="small" />}
+      </ListItemButton>
+      <Collapse in={open} timeout="auto" unmountOnExit>
+        <List disablePadding sx={{ mb: 0.5 }}>
+          {children.map((c) => (
+            <NavLeaf key={c.href} n={c} depth={1} pathname={pathname} onNavigate={onNavigate} />
+          ))}
+        </List>
+      </Collapse>
+    </>
+  );
+}
 
 const NAV_WIDTH = 260;
 
@@ -44,18 +96,28 @@ export default function DashboardLayout({ children }: { children: ReactNode }) {
   const [open, setOpen] = useState(false);
   const [anchor, setAnchor] = useState<HTMLElement | null>(null);
   const [search, setSearch] = useState("");
+  const menus = useMenus();
+  const isAdmin = user?.role === "ADMIN";
+  // Lọc theo quyền; nhóm không còn menu con nào thì bỏ luôn.
+  const visibleTree = menus.tree
+    .filter((n) => !n.adminOnly || isAdmin)
+    .map((n) => (n.children ? { ...n, children: n.children.filter((c) => !c.adminOnly || isAdmin) } : n))
+    .filter((n) => !n.children || n.children.length > 0);
 
   // Tiêu đề tab trình duyệt đổi theo menu đang mở.
   useEffect(() => {
-    const nav = findNav(pathname);
+    const nav = findNav(pathname, menus.all);
     document.title = nav ? `${nav.title} | VibeCode` : "VibeCode";
-  }, [pathname]);
+  }, [pathname, menus.all]);
 
   useEffect(() => {
-    if (!loading && !user) router.replace("/login");
+    if (loading) return;
+    if (!user) router.replace("/login");
+    // Khu quản trị chỉ dành cho ADMIN; người dùng thường về trang chủ.
+    else if (user.role !== "ADMIN") router.replace("/");
   }, [loading, user, router]);
 
-  if (loading || !user) {
+  if (loading || !user || user.role !== "ADMIN") {
     return (
       <Box sx={{ minHeight: "100vh", display: "grid", placeItems: "center" }}>
         <CircularProgress />
@@ -94,26 +156,9 @@ export default function DashboardLayout({ children }: { children: ReactNode }) {
         Menu
       </Typography>
       <List disablePadding>
-        {NAV.filter((n) => !n.adminOnly || user.role === "ADMIN").map((n) => (
-          <ListItemButton
-            key={n.label}
-            component={NextLink}
-            href={n.href}
-            selected={pathname === n.href || (n.href !== "/dashboard" && pathname.startsWith(`${n.href}/`))}
-            onClick={() => setOpen(false)}
-            sx={{
-              borderRadius: 1.5,
-              mb: 0.5,
-              minHeight: 42,
-              color: "text.secondary",
-              "&.Mui-selected": { bgcolor: "rgba(0,167,111,0.1)", color: "primary.dark" },
-              "&.Mui-selected:hover": { bgcolor: "rgba(0,167,111,0.16)" },
-            }}
-          >
-            <ListItemIcon sx={{ minWidth: 38, color: "inherit", "& svg": { fontSize: 20 } }}>{n.icon}</ListItemIcon>
-            <ListItemText primary={n.label} primaryTypographyProps={{ variant: "body2", fontWeight: 600 }} />
-          </ListItemButton>
-        ))}
+        {visibleTree.map((n) =>
+          n.children ? <NavGroup key={n.label} n={n} pathname={pathname} onNavigate={() => setOpen(false)} /> : <NavLeaf key={n.href} n={n} depth={0} pathname={pathname} onNavigate={() => setOpen(false)} />
+        )}
       </List>
 
       <Box sx={{ flexGrow: 1 }} />
@@ -191,9 +236,6 @@ export default function DashboardLayout({ children }: { children: ReactNode }) {
             <IconButton onClick={(e) => setAnchor(e.currentTarget)} aria-label="Tài khoản" sx={{ p: 0.5 }}>
               <Avatar sx={{ width: 34, height: 34, bgcolor: "primary.main", fontSize: 15, fontWeight: 700 }}>{user.fullName.charAt(0).toUpperCase()}</Avatar>
             </IconButton>
-            <IconButton onClick={(e) => setAnchor(e.currentTarget)} aria-label="Thêm" size="small">
-              <MoreVertIcon fontSize="small" />
-            </IconButton>
             <Menu anchorEl={anchor} open={Boolean(anchor)} onClose={() => setAnchor(null)}>
               <Box sx={{ px: 2, py: 1 }}>
                 <Typography variant="subtitle2">{user.fullName}</Typography>
@@ -202,6 +244,9 @@ export default function DashboardLayout({ children }: { children: ReactNode }) {
                 </Typography>
               </Box>
               <Divider sx={{ borderStyle: "dashed" }} />
+              <MenuItem component={NextLink} href="/profile" onClick={() => setAnchor(null)}>
+                <PersonIcon fontSize="small" sx={{ mr: 1 }} /> Hồ sơ cá nhân
+              </MenuItem>
               <MenuItem
                 onClick={() => {
                   setAnchor(null);

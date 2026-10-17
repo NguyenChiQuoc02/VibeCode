@@ -3,7 +3,7 @@
 import dynamic from "next/dynamic";
 import NextLink from "next/link";
 import { useParams } from "next/navigation";
-import { Box, Button, Card, CardContent, CardHeader, CircularProgress } from "@mui/material";
+import { Box, Button, Card, CardContent, CardHeader, CircularProgress, Typography } from "@mui/material";
 import MapIcon from "@mui/icons-material/Map";
 import TravelExploreIcon from "@mui/icons-material/TravelExplore";
 import CrudDetail from "@/components/CrudDetail";
@@ -42,19 +42,27 @@ export default function DestinationDetailPage() {
         <Card variant="outlined" sx={{ height: "100%" }}>
           <CardHeader title="Bản đồ vị trí" titleTypographyProps={{ variant: "subtitle1", fontWeight: 700 }} />
           <CardContent sx={{ pt: 0 }}>
-            <Box sx={{ height: 200, borderRadius: 2, overflow: "hidden" }}>
-              <MiniMap lat={d.latitude} lng={d.longitude} />
-            </Box>
-            <Button
-              component={NextLink}
-              href={`/dashboard/map?province=${d.provinceCode}&lat=${d.latitude}&lng=${d.longitude}&destinations=1`}
-              fullWidth
-              variant="contained"
-              startIcon={<MapIcon />}
-              sx={{ mt: 2 }}
-            >
-              Xem trên bản đồ
-            </Button>
+            {d.latitude != null && d.longitude != null ? (
+              <>
+                <Box sx={{ height: 200, borderRadius: 2, overflow: "hidden" }}>
+                  <MiniMap lat={d.latitude} lng={d.longitude} />
+                </Box>
+                <Button
+                  component={NextLink}
+                  href={`/dashboard/map?province=${d.provinceCode}&lat=${d.latitude}&lng=${d.longitude}&destinations=1`}
+                  fullWidth
+                  variant="contained"
+                  startIcon={<MapIcon />}
+                  sx={{ mt: 2 }}
+                >
+                  Xem trên bản đồ
+                </Button>
+              </>
+            ) : (
+              <Typography variant="body2" color="text.secondary">
+                Chưa có tọa độ.
+              </Typography>
+            )}
           </CardContent>
         </Card>
       )}

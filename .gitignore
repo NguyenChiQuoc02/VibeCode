@@ -6,3 +6,7 @@ BE/auth-service/src/main/resources/application.yml
 .playwright-mcp
 application-local.yml
 script/
+BE/recommend-service/.env
+BE/recommend-service/.venv/
+__pycache__/
+.pytest_cache/

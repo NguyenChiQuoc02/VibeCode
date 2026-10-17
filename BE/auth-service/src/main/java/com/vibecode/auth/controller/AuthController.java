@@ -29,4 +29,14 @@ public class AuthController {
     public UserResponse me(Authentication authentication) {
         return auth.me((String) authentication.getPrincipal());
     }
+
+    @PutMapping("/me")
+    public UserResponse updateProfile(Authentication authentication, @Valid @RequestBody UpdateProfileRequest req) {
+        return auth.updateProfile((String) authentication.getPrincipal(), req);
+    }
+
+    @PutMapping("/password")
+    public void changePassword(Authentication authentication, @Valid @RequestBody ChangePasswordRequest req) {
+        auth.changePassword((String) authentication.getPrincipal(), req);
+    }
 }

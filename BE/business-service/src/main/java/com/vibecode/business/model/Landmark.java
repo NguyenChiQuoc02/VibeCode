@@ -1,7 +1,5 @@
 package com.vibecode.business.model;
 
-import jakarta.validation.constraints.DecimalMax;
-import jakarta.validation.constraints.DecimalMin;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Pattern;
 import org.springframework.data.annotation.Id;
@@ -22,8 +20,8 @@ public record Landmark(
         @NotBlank(message = "Phân loại không được để trống") String category,
         int provinceCode,
         String address,
-        @DecimalMin(value = "-90", message = "Vĩ độ không hợp lệ") @DecimalMax(value = "90", message = "Vĩ độ không hợp lệ") double latitude,
-        @DecimalMin(value = "-180", message = "Kinh độ không hợp lệ") @DecimalMax(value = "180", message = "Kinh độ không hợp lệ") double longitude,
+        Double latitude,
+        Double longitude,
         String recognitionLevel,
         Integer recognitionYear,
         Double areaKm2,

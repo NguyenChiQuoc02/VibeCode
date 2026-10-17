@@ -28,6 +28,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import SaveIcon from "@mui/icons-material/SaveOutlined";
 import ImageLightbox from "@/components/ImageLightbox";
 import PageTitle from "@/components/PageTitle";
+import { useToast } from "@/context/ToastContext";
 import { fileApi, Landmark, landmarkApi, LandmarkStatus } from "@/lib/api";
 import { LANDMARK_CATEGORIES, LANDMARK_STATUS, RECOGNITION_LEVELS } from "@/lib/landmark";
 import { useProvinces } from "@/lib/useProvinces";
@@ -77,8 +78,8 @@ function fromLandmark(l: Landmark): FormState {
     category: l.category,
     provinceCode: l.provinceCode,
     address: l.address ?? "",
-    latitude: String(l.latitude),
-    longitude: String(l.longitude),
+    latitude: l.latitude != null ? String(l.latitude) : "",
+    longitude: l.longitude != null ? String(l.longitude) : "",
     recognitionLevel: l.recognitionLevel ?? "",
     recognitionYear: l.recognitionYear ? String(l.recognitionYear) : "",
     areaKm2: l.areaKm2 ? String(l.areaKm2) : "",
@@ -93,6 +94,7 @@ function fromLandmark(l: Landmark): FormState {
 export default function LandmarkForm({ id }: { id?: string }) {
   const router = useRouter();
   const qc = useQueryClient();
+  const toast = useToast();
   const { options } = useProvinces();
   const editing = Boolean(id);
 
@@ -119,6 +121,7 @@ export default function LandmarkForm({ id }: { id?: string }) {
     mutationFn: (body: Omit<Landmark, "id">) => (id ? landmarkApi.update(id, body) : landmarkApi.create(body)),
     onSuccess: (saved) => {
       qc.invalidateQueries({ queryKey: ["landmarks"] });
+      toast.success(editing ? "Cập nhật di tích thành công" : "Thêm mới di tích thành công");
       router.push(`/dashboard/landmarks/${saved.id}`);
     },
     onError: (e: Error) => setError(e.message),
@@ -173,9 +176,9 @@ export default function LandmarkForm({ id }: { id?: string }) {
     const missing = required.find(([, v]) => v === "" || v === undefined);
     if (missing) return setError(`${missing[0]} không được để trống`);
 
-    const lat = Number(form.latitude);
-    const lng = Number(form.longitude);
-    if (form.latitude === "" || form.longitude === "" || Number.isNaN(lat) || Number.isNaN(lng)) return setError("Vĩ độ và kinh độ phải là số");
+    // Tọa độ không bắt buộc: để trống thì gửi null.
+    const lat = form.latitude === "" ? null : Number(form.latitude);
+    const lng = form.longitude === "" ? null : Number(form.longitude);
     if (form.recognitionYear && !/^\d{4}$/.test(form.recognitionYear)) return setError("Năm công nhận phải gồm 4 chữ số");
 
     setError("");
@@ -274,8 +277,8 @@ export default function LandmarkForm({ id }: { id?: string }) {
                 </TextField>
                 {field("Địa chỉ", "address", { placeholder: "Số nhà, đường, xã/phường" })}
                 <Stack direction="row" spacing={2}>
-                  {field("Vĩ độ", "latitude", { type: "number", required: true })}
-                  {field("Kinh độ", "longitude", { type: "number", required: true })}
+                  {field("Vĩ độ", "latitude", { type: "number" })}
+                  {field("Kinh độ", "longitude", { type: "number" })}
                 </Stack>
                 <TextField select fullWidth size="small" label="Công nhận" value={form.recognitionLevel} onChange={(e) => set("recognitionLevel", e.target.value)} SelectProps={{ displayEmpty: true }} InputLabelProps={{ shrink: true }}>
                   <MenuItem value="">Chưa xếp hạng</MenuItem>
@@ -392,7 +395,7 @@ export default function LandmarkForm({ id }: { id?: string }) {
         <Button component={NextLink} href="/dashboard/landmarks" variant="outlined" color="inherit">
           Hủy
         </Button>
-        <Button variant="contained" startIcon={<SaveIcon />} onClick={submit} disabled={save.isPending || uploading}>
+        <Button variant="contained" startIcon={<SaveIcon />} onClick={submit} disabled={save.isPending || save.isSuccess || uploading}>
           Lưu
         </Button>
       </Stack>

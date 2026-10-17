@@ -3,7 +3,7 @@
 import { ReactNode } from "react";
 import { usePathname } from "next/navigation";
 import { Box, Stack, Typography } from "@mui/material";
-import { NAV } from "@/lib/navigation";
+import { useMenus } from "@/lib/useMenus";
 
 interface Props {
   /** Ghi đè tiêu đề lấy từ menu (vd lời chào ở trang tổng quan, "Thêm mới ..."). */
@@ -18,9 +18,10 @@ interface Props {
 /** Tiêu đề trang kèm icon của menu tương ứng. */
 export default function PageTitle({ title, subtitle, action, navHref }: Props) {
   const pathname = usePathname();
+  const { all } = useMenus();
   const href = navHref ?? pathname;
   // Khớp chính xác, hoặc menu dài nhất là tiền tố của đường dẫn (trang con như /landmarks/new).
-  const nav = NAV.filter((n) => href === n.href || (n.href !== "/dashboard" && href.startsWith(`${n.href}/`))).sort((a, b) => b.href.length - a.href.length)[0];
+  const nav = all.filter((n) => href === n.href || (n.href !== "/dashboard" && href.startsWith(`${n.href}/`))).sort((a, b) => b.href.length - a.href.length)[0];
   const exact = nav && href === nav.href;
 
   return (

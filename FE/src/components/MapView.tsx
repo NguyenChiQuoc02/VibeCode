@@ -1,7 +1,8 @@
 "use client";
 
-import { useEffect, useMemo } from "react";
-import { CircleMarker, GeoJSON, MapContainer, Popup, Tooltip, useMap } from "react-leaflet";
+import { useEffect, useMemo, useState } from "react";
+import { GeoJSON, MapContainer, Marker, Popup, Tooltip, useMap, useMapEvents } from "react-leaflet";
+import L from "leaflet";
 import type { LatLngBoundsExpression, PathOptions } from "leaflet";
 import type { Feature, Geometry } from "geojson";
 import "leaflet/dist/leaflet.css";
@@ -48,6 +49,81 @@ function toBounds(bbox?: number[]): LatLngBoundsExpression {
   ];
 }
 
+const iconCache = new Map<string, L.DivIcon>();
+
+/** Ghim bản đồ (SVG) theo màu; dùng chung một icon cho mọi marker cùng màu. */
+function pinIcon(color: string): L.DivIcon {
+  let icon = iconCache.get(color);
+  if (!icon) {
+    icon = L.divIcon({
+      className: "vj-pin",
+      html: `<svg width="28" height="36" viewBox="0 0 26 34" xmlns="http://www.w3.org/2000/svg"><path d="M13 1C6.4 1 1 6.4 1 13c0 9 12 20 12 20s12-11 12-20C25 6.4 19.6 1 13 1z" fill="${color}" stroke="#fff" stroke-width="1.6"/><circle cx="13" cy="13" r="4.6" fill="#fff"/></svg>`,
+      iconSize: [28, 36],
+      iconAnchor: [14, 35],
+      popupAnchor: [0, -32],
+    });
+    iconCache.set(color, icon);
+  }
+  return icon;
+}
+
+const FULL_DETAIL_ZOOM = 12;
+
+/**
+ * Chỉ vẽ ghim trong khung nhìn. Khi thu nhỏ thì mỗi ô lưới chỉ hiện một ghim (ô càng nhỏ khi phóng to),
+ * nhờ vậy hàng nghìn điểm vẫn mượt; phóng đến mức chi tiết thì hiện đủ mọi ghim.
+ */
+function PinLayer({ markers }: { markers: MapMarker[] }) {
+  const map = useMap();
+  const [view, setView] = useState(() => ({ bounds: map.getBounds(), zoom: map.getZoom() }));
+  useMapEvents({
+    moveend: () => setView({ bounds: map.getBounds(), zoom: map.getZoom() }),
+  });
+
+  const { shown, hidden } = useMemo(() => {
+    const padded = view.bounds.pad(0.2);
+    const visible = markers.filter((m) => padded.contains([m.latitude, m.longitude]));
+    if (view.zoom >= FULL_DETAIL_ZOOM) return { shown: visible, hidden: 0 };
+    // Kích thước ô lưới (độ) giảm một nửa mỗi mức phóng.
+    const cell = 3.2 / 2 ** (view.zoom - 5);
+    const seen = new Set<string>();
+    const picked: MapMarker[] = [];
+    for (const m of visible) {
+      const key = `${Math.floor(m.latitude / cell)}:${Math.floor(m.longitude / cell)}:${m.color}`;
+      if (!seen.has(key)) {
+        seen.add(key);
+        picked.push(m);
+      }
+    }
+    return { shown: picked, hidden: visible.length - picked.length };
+  }, [markers, view]);
+
+  return (
+    <>
+      {shown.map((m) => (
+        <Marker key={m.id} position={[m.latitude, m.longitude]} icon={pinIcon(m.color)}>
+          <Popup>
+            <strong>{m.name}</strong>
+            <br />
+            {m.category}
+            {m.address && (
+              <>
+                <br />
+                {m.address}
+              </>
+            )}
+          </Popup>
+        </Marker>
+      ))}
+      {hidden > 0 && (
+        <div style={{ position: "absolute", left: 12, bottom: 12, zIndex: 1000, padding: "6px 12px", borderRadius: 16, background: "rgba(255,255,255,0.95)", boxShadow: "0 2px 8px rgba(0,0,0,0.2)", fontSize: 12, color: "#1C252E" }}>
+          Phóng to để xem thêm {hidden.toLocaleString("vi-VN")} điểm
+        </div>
+      )}
+    </>
+  );
+}
+
 function FitBounds({ bounds, focus }: { bounds: LatLngBoundsExpression; focus?: [number, number] | null }) {
   const map = useMap();
   useEffect(() => {
@@ -77,7 +153,7 @@ function units(list: Unit[], selectedCode: number | null, onClick: (code: number
     });
 }
 
-export default function MapView({ provinces, wards, provinceCode, wardCode, markers, focus, onSelectProvince, onSelectWard }: Props) {
+export default function MapView({ provinces, wards, provinceCode, wardCode, markers, focus, onSelectProvince }: Props) {
   const province = provinces.find((p) => p.code === provinceCode);
   const ward = wards.find((w) => w.code === wardCode);
   const bbox = (ward ?? province)?.bbox;
@@ -95,31 +171,12 @@ export default function MapView({ provinces, wards, provinceCode, wardCode, mark
       {provinceCode !== null && province && (
         <>
           {units([province], null, () => {}, { color: "#007867", weight: 3, fill: false, interactive: false }, {})}
-          {units(
-            wards,
-            wardCode,
-            onSelectWard,
-            { color: PRIMARY, weight: 1, fillColor: PRIMARY, fillOpacity: 0.12 },
-            { color: "#FF5630", weight: 3, fillColor: "#FF5630", fillOpacity: 0.35 }
-          )}
+          {/* Ranh giới phường chỉ hiện khi tìm và chọn phường trong ô tìm kiếm, không vẽ cả tỉnh */}
+          {ward && units([ward], null, () => {}, { color: "#FF5630", weight: 3, fillColor: "#FF5630", fillOpacity: 0.3, interactive: false }, {})}
         </>
       )}
 
-      {markers.map((l) => (
-        <CircleMarker key={l.id} center={[l.latitude, l.longitude]} radius={4} pathOptions={{ color: "#fff", weight: 1, fillColor: l.color, fillOpacity: 1 }}>
-          <Popup>
-            <strong>{l.name}</strong>
-            <br />
-            {l.category}
-            {l.address && (
-              <>
-                <br />
-                {l.address}
-              </>
-            )}
-          </Popup>
-        </CircleMarker>
-      ))}
+      <PinLayer markers={markers} />
     </MapContainer>
   );
 }

@@ -214,9 +214,7 @@ export default function LandmarkDetailPage() {
                       <Row label="Địa chỉ">{l.address || "–"}</Row>
                       <Row label="Công nhận">{l.recognitionLevel ?? "–"}</Row>
                       <Row label="Năm công nhận">{l.recognitionYear ?? "–"}</Row>
-                      <Row label="Tọa độ">
-                        {l.latitude.toFixed(5)}, {l.longitude.toFixed(5)}
-                      </Row>
+                      <Row label="Tọa độ">{l.latitude != null && l.longitude != null ? `${l.latitude.toFixed(5)}, ${l.longitude.toFixed(5)}` : "–"}</Row>
                       {l.source && <Row label="Nguồn dữ liệu">{l.source}</Row>}
                       {l.detail && (
                         <Row label="Mô tả chi tiết">
@@ -239,19 +237,27 @@ export default function LandmarkDetailPage() {
                   <Card variant="outlined" sx={{ height: "100%" }}>
                     <CardHeader title="Bản đồ vị trí" titleTypographyProps={{ variant: "subtitle1", fontWeight: 700 }} />
                     <CardContent sx={{ pt: 0 }}>
-                      <Box sx={{ height: 200, borderRadius: 2, overflow: "hidden" }}>
-                        <MiniMap lat={l.latitude} lng={l.longitude} />
-                      </Box>
-                      <Button
-                        component={NextLink}
-                        href={`/dashboard/map?province=${l.provinceCode}&lat=${l.latitude}&lng=${l.longitude}&landmarks=1`}
-                        fullWidth
-                        variant="contained"
-                        startIcon={<MapIcon />}
-                        sx={{ mt: 2 }}
-                      >
-                        Xem trên bản đồ
-                      </Button>
+                      {l.latitude != null && l.longitude != null ? (
+                        <>
+                          <Box sx={{ height: 200, borderRadius: 2, overflow: "hidden" }}>
+                            <MiniMap lat={l.latitude} lng={l.longitude} />
+                          </Box>
+                          <Button
+                            component={NextLink}
+                            href={`/dashboard/map?province=${l.provinceCode}&lat=${l.latitude}&lng=${l.longitude}&landmarks=1`}
+                            fullWidth
+                            variant="contained"
+                            startIcon={<MapIcon />}
+                            sx={{ mt: 2 }}
+                          >
+                            Xem trên bản đồ
+                          </Button>
+                        </>
+                      ) : (
+                        <Typography variant="body2" color="text.secondary">
+                          Chưa có tọa độ.
+                        </Typography>
+                      )}
                     </CardContent>
                   </Card>
                 </Grid>
